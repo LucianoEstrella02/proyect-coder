@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Desarrollo Web - Coder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>GenBio Laboratorio</h1>
+        <a href="./index.html"><img class="logo" src="./assets/logo-removebg-preview.png" alt="LogoGenBio"></a>
+
+        <nav class="menu__ppal">
+
+            <ul >
+                <a href="./nosotros.html">
+                    <li id="lista">Nosotros</li>
+                </a>
+                <a href="./prestaciones.html">
+                    <li id="lista">Prestaciones</li>
+                </a>
+                <a href="./contacto.html">
+                    <li id="lista">Contacto</li>
+                </a>
+                <a href="./ingresar.html">
+                    <li id="lista">Ingresar</li>
+                </a>
+
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="portada">
+            <div class="portada__texto">
+                <h1>Tu Genética Es El Futuro</h1>
+            </div>
+        </section>
+
+        <div>
+            <div class="contacto">
+                <h2 class="direccion"><i class="fa-solid fa-house-medical house"></i> Belgrano 1007, Ciudad, Mendoza
+                </h2>
+                <h2 class="direccion"><i class="fa-sharp fa-solid fa-phone house"></i> 0261-5003634</h2>
+                <h2 class="direccion"><i class="fa-solid fa-envelope house"></i> genbiolab@gmail.com</h2>
+            </div>
+
+            <div class="ubicacion">
+                <iframe class="ubicacionMapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.3176133394097!2d-68.85004937947626!3d-32.88975777834586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e097079be7f1d%3A0xb89409a727a0463c!2sLABORATORIO%20BIOQUIMICO!5e0!3m2!1ses-419!2sar!4v1663038916569!5m2!1ses-419!2sar"
+                     height="450" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+
+        </div>
+
+        <div class="contacto">
+            <h1>COMUNICATE CON NOSOTROS</h1>
+        </div>
+        
+        <div >
+            <form  class="consulta">
+                <label for="nombre-apellido"></label>
+                <input class="consulta_1" type="text" id="nombre-apellido" placeholder="Nombre y Apellido">
+                <label for="email"></label>
+                <input class="consulta_1" type="email" id="email" placeholder="Email">
+                <label for="telefono"></label>
+                <input class="consulta_1" type="text" id="telefono" placeholder="Telefono de Contacto">
+                <label class="consulta_2" for="motivo-consulta">Motivo de Contsulta</label>
+                <select  class="consulta_2" name="" id="motivo-consulta">
+                    <option value="indicaciones">Indicaciones</option>
+                    <option value="turnos">Turnos Bacteriologia</option>
+                    <option value="relcamos/sugerencias">Reclamos/Sugerencia</option>
+                    <option value="presupuesto">Presupuestos</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <textarea  class="consulta_1" cols="30" rows="10" placeholder=" Expandi tu consulta"></textarea>
+                <label class="consulta_2">Carga tu Orden Medica <input type="file" value="
+                    Examinar"></label>
+
+                    <input class="enviar__consulta" type="submit" value="Enviar">
+                
+             </form>
+               
+             
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+
+        <div>
+            <h4 id="titulo-footer">Links</h4>
+            <ul class="footer__list">
+                <a class="link-footer" href="./nosotros.html">
+                    <li>Nosotros</li>
+                </a>
+                <a class="link-footer" href="./prestaciones.html">
+                    <li>Prestaciones</li>
+                </a>
+                <a class="link-footer" href="./contacto.html">
+                    <li>Contacto</li>
+                </a>
+                <a class="link-footer" href="./ingresar.html">
+                    <li>Ingresar</li>
+                </a>
+            </ul>
+        </div>
+
+        <div>
+            <h4 id="titulo-footer">Seguinos en nuestras redes</h4>
+            <ul class="footer__list1">
+                <li><i class="fa-brands fa-facebook icons-1"></i></li>
+                <li><i class="fa-brands fa-instagram icons-1"></i></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 id="titulo-footer">Escribinos</h4>
+            <ul class="footer__list2">
+                <li><i class="fa-solid fa-envelope icons"></i> genbiolab@gmailcom</li>
+                <a href="https://www.whatsapp.com/?lang=es"></a>
+                <li><i class="fa-brands fa-whatsapp icons"></i> 0261-5003634</li>
+            </ul>
+        </div>
+    </footer>
+</body>

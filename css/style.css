@@ -1,0 +1,672 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    
+    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*-----------------Cabecera de la pagina-------------*/
+header{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    opacity: 90%;
+}
+
+
+header nav{
+    width: 80%;
+}
+
+@media (max-width:767px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+        width: 100%;
+    }
+
+}
+
+
+.menu__ppal ul {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  
+    margin-top: 12px;
+    
+}
+
+@media (max-width:767px){
+    .menu__ppal ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 2px;
+    }
+}
+
+.portada{
+    
+    background-image: url(../assets/Ce-que-lon-appelle-lADN-indesirable-la-matiere-noire.gif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+      
+}
+
+@media (max-width:767px){
+    .portada {
+        display: none;   
+        
+    }
+    .portada__nosotros{
+        display: none;
+    }
+    .portada__prestaciones{
+        display: none;
+    }
+    .portada__texto{
+        display: none;
+    }
+}
+
+.portada__nosotros{
+    
+    background-image: url(../assets/portada-nosotros.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+      
+
+}
+
+.portada__prestaciones{
+    background-image: url(../assets/prestaciones-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 97vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.portada__texto{
+    margin-left: 30px;
+    font-size: 30px;
+    color: #f7f5f3;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.logo{
+    width: 190px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+    transition-timing-function: cubic-bezier(.17,.67,.96,.09);
+    box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
+    -webkit-transition: all 150ms ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(125%);
+    box-shadow: 5px 5px 5px white ;
+    border-radius: 100%;
+}
+
+@media (max-width: 767px){
+    .logo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+
+#lista{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin: 20px;
+    padding: 6px;
+    width: 140px;
+    border: 2px solid rgb(48, 185, 140);
+    background-color: rgb(48, 185, 140);;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease-out;   
+}
+
+#lista:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    
+}
+
+#titulo-cartel{
+    margin: 10px;
+    padding: 20px;
+}
+.cartel{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    
+}
+@media (max-width:767px){
+    .cartel{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .cartel1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+    }
+}
+
+#horarios{
+    color: #E4E4E1;
+    background-color: #5e95cc;
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 20px;
+    flex-direction: column;
+    border: 10px solid black;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 450px;
+    height: 460px;
+    animation-name: horarios;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: static;
+    animation-timing-function:linear ;
+}
+
+@keyframes horarios {
+    0%{border-color: rgb(212, 35, 35);}
+    25%{border-color: yellow;}
+    50%{border-color: white;}
+    75%{border-color: green;}
+    100%{border-color: orangered;};     
+}
+
+#vacunate{
+    width: 660px;
+    height: 470px;
+    justify-content:  space-around;
+    
+}
+
+#hiv{
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: white;
+    background: red;
+    width: 98vw;
+
+}
+.cartel1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    margin-top: 3%;
+       
+}
+
+.tener-en-cta__titulo{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #D8E9A8;
+
+}
+
+.tener-en-cta__texto{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #D8E9A8;
+    padding: 20px;
+    text-align: justify;
+    font-style: unset;
+    font-weight: 530;
+    letter-spacing: 1px;
+}
+
+.hiv__img{
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 0px;
+    width: 600px;
+    height: 550px;
+}
+.sifilis__img{
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 0px;
+    width: 600px;
+    height: 550px;
+}
+
+#atencion{
+    
+    width: 98vw;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: white;
+    background: rgb(7, 7, 77);
+    
+}
+.diabete__img{
+    border: 2px solid rgb(7, 7, 77);
+    border-radius: 30px;
+    padding: 0px;
+    width: 600px;
+    height: 550px;
+}
+
+.cada_cto_img{
+    border: 2px solid rgb(7, 7, 77);
+    border-radius: 30px;
+    padding: 0px;
+    width: 600px;
+    height: 550px;
+}
+
+/*Ingreso Pacientes*/
+
+#inicio-form{
+    text-align: center;
+    color: rgb(16, 16, 138);;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px
+
+}
+
+
+.contenedor{
+    width: 350px;
+    padding: 10px;
+    
+       
+}
+
+.formulario{
+    border: 3px solid whitesmoke;
+    width: 370px;
+    box-shadow: 0px 0px 2px 2px white;
+    margin-bottom: 50px;
+    margin-left: 37%;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+@media (max-width:767px){
+    .formulario{
+        margin-left: 25%;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    width: 20rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    
+    
+}
+
+.icon{
+    font-size: 25px;
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+    color: rgb(16, 16, 138);
+    border: none;
+}
+
+.button{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 20rem;
+    color: white;
+    font-size: 20px;
+    background: rgb(16, 16, 138);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background: cadetblue;
+
+}
+
+
+#texto{
+    font-family: 'Playfair Display', serif;
+    margin: 13px;
+    text-align: center;
+
+}
+
+.link{
+    text-decoration: underline;
+    color:  rgb(16, 16, 138);
+    font-weight: 600;
+}
+
+.link:hover{
+    color: cadetblue;
+}
+
+/* Nosotros*/
+
+
+.nosotros-img{
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 98.5%;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.historia{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    background-color: #EAE3D2;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.historia__texto{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAE3D2;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 530;
+    letter-spacing: 1px;
+    line-height: 30px;
+
+}
+
+/*Prestaciones*/
+
+.prestaciones_titulo{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    background-color: #EAE3D2;
+    font-size: 35px;
+}
+.prestaciones{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.tabla__titulo{
+    
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    border: 3px solid #EAE3D2;
+    background-color: #EAE3D2;
+}
+
+.tabla_header{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #EAE3D2;
+    padding-top:10px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 185, 140);
+    padding: 15px;
+    margin-top: 30px;
+    border: 2px solid #EAE3D2;
+    
+}
+
+.desc{
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.desc:hover{
+    transform: scale(1.2);
+
+}
+
+.tabla__determincion{
+    font-family: 'Playfair Display', serif;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 15px;
+    align-content: center;
+}
+
+.tabla{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+/*Contacto*/
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.ubicacionMapa{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    border-radius: 30px;
+}
+
+.contacto{
+    text-align: center;
+    background-color: #EAE3D2;
+    font-family: 'Playfair Display', serif;
+    margin-top: 15px;
+    border: 3px solid black;
+    border-radius: 20px ;  
+}
+.direccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.6px;
+}
+.house{
+    margin: 10px;
+}
+
+.consulta{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   padding: 10px;
+}
+.consulta_1{
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    
+}
+
+.consulta_2{
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.enviar__consulta{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+
+/*Pie de Pagina (Footer)*/
+
+footer{
+    height: 24vh;
+    background: #A5C9CA;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+ @media (max-width:767px){
+    footer{
+        height: 30vh;
+    }
+ }
+ 
+
+#titulo-footer{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: black;
+}
+
+.footer__list{
+    text-align: justify;
+    font-size: 18px;
+    transition: all .4s ease-in-out;
+}
+
+.footer__list :hover{
+    transform: scale(1.2);
+    color: yellow;
+}
+
+.footer__list1{
+    
+    text-align: center;
+    font-size: 18px;
+    transition: all .4s ease-in-out;
+}
+
+.footer__list1 :hover{
+    transform: scale(1.2);
+    color: yellow;
+}
+
+.footer__list2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.icons{
+    font-size: 25px;
+    margin-bottom: 10px ;
+}
+
+.icons-1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}

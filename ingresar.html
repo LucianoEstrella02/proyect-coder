@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Desarrollo Web - Coder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>GenBio Laboratorio</h1>
+        <a href="./index.html"><img class="logo" src="./assets/logo-removebg-preview.png" alt="LogoGenBio"></a>
+
+        <nav class="menu__ppal">
+
+            <ul >
+                <a href="./nosotros.html">
+                    <li id="lista">Nosotros</li>
+                </a>
+                <a href="./prestaciones.html">
+                    <li id="lista">Prestaciones</li>
+                </a>
+                <a href="./contacto.html">
+                    <li id="lista">Contacto</li>
+                </a>
+                <a href="./ingresar.html">
+                    <li id="lista">Ingresar</li>
+                </a>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="portada">
+            <div class="portada__texto">
+                <h1>Tu Genética Es El Futuro</h1>
+            </div>
+        </section>
+
+
+        <form class="formulario">
+            <h1 id="inicio-form">Bienvenido</h1>
+
+            <div class="contenedor">
+                <div class="input-contenedor">
+                    <label for="nombre-completo"><i class="fa-solid fa-user icon"></i></label>
+                    <input type="text" id="nombre-completo" placeholder="Nombre Completo">
+                </div>
+
+                <div class="input-contenedor">
+                    <label for="contraseña"><i class="fa-solid fa-key icon"></i></label>
+                    <input type="password" id="contraseña" placeholder="Contraseña">
+                </div>
+
+                <input type="submit"  id="iniciar-sesion" value="Iniciar Sesión" class="button">
+
+                <p id="texto">Al registrarte, aceptas Bases y condiciones de uso y Política de privacidad</p>
+                <p id="texto">¿No tienes cuenta? <a class="link" href="./registro.html">Registrate</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+        <div>
+            <h4 id="titulo-footer">Links</h4>
+            <ul class="footer__list">
+                <a class="link-footer" href="./nosotros.html">
+                    <li>Nosotros</li>
+                </a>
+                <a class="link-footer" href="./prestaciones.html">
+                    <li>Prestaciones</li>
+                </a>
+                <a class="link-footer" href="./contacto.html">
+                    <li>Contacto</li>
+                </a>
+                <a class="link-footer" href="./ingresar.html">
+                    <li>Ingresar</li>
+                </a>
+            </ul>
+        </div>
+
+        <div>
+            <h4 id="titulo-footer">Seguinos en nuestras redes</h4>
+            <ul class="footer__list1">
+                <li><i class="fa-brands fa-facebook icons-1"></i></li>
+                <li><i class="fa-brands fa-instagram icons-1"></i></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 id="titulo-footer">Escribinos</h4>
+            <ul class="footer__list2">
+                <li><i class="fa-solid fa-envelope icons"></i> genbiolab@gmailcom</li>
+                <a href="https://www.whatsapp.com/?lang=es"></a>
+                <li><i class="fa-brands fa-whatsapp icons"></i> 0261-5003634</li>
+            </ul>
+        </div>
+    </footer>
+</body>
