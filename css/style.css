@@ -34,15 +34,6 @@ header nav{
     width: 95%;
 }
 
-@media (max-width:1200px){
-    header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: unset;
-        width: 100%;
-    }
-}
 
 .menu__ppal ul {
     
@@ -54,15 +45,6 @@ header nav{
     
 }
 
-@media (max-width:1200px){
-    .menu__ppal ul{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding: 2px;
-    }
-}
 
 .portada{
     
@@ -75,22 +57,6 @@ header nav{
     justify-content: center;
     align-items: flex-end;
       
-}
-
-@media (max-width:1200px){
-    .portada {
-        display: none;   
-        
-    }
-    .portada__nosotros{
-        display: none;
-    }
-    .portada__prestaciones{
-        display: none;
-    }
-    .portada__texto{
-        display: none;
-    }
 }
 
 .portada__nosotros{
@@ -141,13 +107,6 @@ header nav{
     border-radius: 100%;
 }
 
-@media (max-width: 1200px){
-    .logo{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
 ul{
     list-style: none;
@@ -184,23 +143,7 @@ ul{
     margin: 25px;
     
 }
-@media (max-width:1200px){
-    .cartel{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        gap: 10px;
-    }
 
-    .cartel1{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        gap: 10px;
-    }
-}
 
 #horarios{
     color: #E4E4E1;
@@ -355,11 +298,7 @@ ul{
     padding: 10px;
 }
 
-@media (max-width:1200px){
-    .formulario{
-        margin-left: 25%;
-    }
-}
+
 
 input[type="text"],
 input[type="password"],
@@ -614,12 +553,7 @@ footer{
     justify-content:space-around;
     align-items: flex-start;
 }
- @media (max-width:767px){
-    footer{
-        height: 30vh;
-    }
- }
- 
+
 
 #titulo-footer{
     text-decoration: underline;
