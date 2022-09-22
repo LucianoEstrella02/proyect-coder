@@ -31,10 +31,10 @@ header{
 
 
 header nav{
-    width: 80%;
+    width: 95%;
 }
 
-@media (max-width:767px){
+@media (max-width:1200px){
     header{
         flex-direction: column;
         justify-content: center;
@@ -42,9 +42,7 @@ header nav{
         position: unset;
         width: 100%;
     }
-
 }
-
 
 .menu__ppal ul {
     
@@ -53,9 +51,10 @@ header nav{
     align-items: flex-start;  
     margin-top: 12px;
     
+    
 }
 
-@media (max-width:767px){
+@media (max-width:1200px){
     .menu__ppal ul{
         flex-direction: column;
         justify-content: center;
@@ -71,13 +70,14 @@ header nav{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
       
 }
 
-@media (max-width:767px){
+@media (max-width:1200px){
     .portada {
         display: none;   
         
@@ -141,7 +141,7 @@ header nav{
     border-radius: 100%;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1200px){
     .logo{
         flex-direction: column;
         justify-content: center;
@@ -184,7 +184,7 @@ ul{
     margin: 25px;
     
 }
-@media (max-width:767px){
+@media (max-width:1200px){
     .cartel{
         flex-direction: column;
         justify-content: center;
@@ -355,7 +355,7 @@ ul{
     padding: 10px;
 }
 
-@media (max-width:767px){
+@media (max-width:1200px){
     .formulario{
         margin-left: 25%;
     }
