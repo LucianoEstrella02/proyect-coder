@@ -21,7 +21,7 @@
 
         <nav class="menu__ppal">
 
-            <ul >
+            <ul>
                 <a href="./nosotros.html">
                     <li id="lista">Nosotros</li>
                 </a>
@@ -47,7 +47,7 @@
             </div>
         </section>
 
-        <div>
+        <div class="cuadro">
             <div class="contacto">
                 <h2 class="direccion"><i class="fa-solid fa-house-medical house"></i> Belgrano 1007, Ciudad, Mendoza
                 </h2>
@@ -58,44 +58,41 @@
             <div class="ubicacion">
                 <iframe class="ubicacionMapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.3176133394097!2d-68.85004937947626!3d-32.88975777834586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e097079be7f1d%3A0xb89409a727a0463c!2sLABORATORIO%20BIOQUIMICO!5e0!3m2!1ses-419!2sar!4v1663038916569!5m2!1ses-419!2sar"
-                     height="450" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    height="450" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-
 
         </div>
 
         <div class="contacto">
             <h1>COMUNICATE CON NOSOTROS</h1>
         </div>
-        
+
         <div >
-            <form  class="consulta">
-                <label for="nombre-apellido"></label>
-                <input class="consulta_1" type="text" id="nombre-apellido" placeholder="Nombre y Apellido">
-                <label for="email"></label>
-                <input class="consulta_1" type="email" id="email" placeholder="Email">
-                <label for="telefono"></label>
-                <input class="consulta_1" type="text" id="telefono" placeholder="Telefono de Contacto">
-                <label class="consulta_2" for="motivo-consulta">Motivo de Contsulta</label>
-                <select  class="consulta_2" name="" id="motivo-consulta">
-                    <option value="indicaciones">Indicaciones</option>
-                    <option value="turnos">Turnos Bacteriologia</option>
-                    <option value="relcamos/sugerencias">Reclamos/Sugerencia</option>
-                    <option value="presupuesto">Presupuestos</option>
-                    <option value="otro">Otro</option>
-                </select>
+            <form class="cuadro2">
+                <div class="consulta">
+                    <label for="nombre-apellido"></label>
+                    <input class="consulta_1" type="text" id="nombre-apellido" placeholder="Nombre y Apellido">
+                    <label for="email"></label>
+                    <input class="consulta_1" type="email" id="email" placeholder="Email">
+                    <label for="telefono"></label>
+                    <input class="consulta_1" type="text" id="telefono" placeholder="Telefono de Contacto">
+                    <label class="consulta_2">Carga tu Orden Medica <input type="file" value="
+                        Examinar"></label>
+                </div>
+                <div class="consulta_3">
+                    <label class="consulta_1" for="motivo-consulta">Motivo de Contsulta</label>
+                    <select class="consulta_2" name="" id="motivo-consulta">
+                        <option value="indicaciones">Indicaciones</option>
+                        <option value="turnos">Turnos Bacteriologia</option>
+                        <option value="relcamos/sugerencias">Reclamos/Sugerencia</option>
+                        <option value="presupuesto">Presupuestos</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <textarea class="consulta_2" cols="30" rows="10" placeholder=" Expandi tu consulta"></textarea>
+                </div>
+            </form>
+            <input class="enviarConsulta" type="submit" value="Enviar">
 
-                <textarea  class="consulta_1" cols="30" rows="10" placeholder=" Expandi tu consulta"></textarea>
-                <label class="consulta_2">Carga tu Orden Medica <input type="file" value="
-                    Examinar"></label>
-
-                    <input class="enviar__consulta" type="submit" value="Enviar">
-                
-             </form>
-               
-             
         </div>
 
 
