@@ -29,12 +29,21 @@ header{
     opacity: 90%;
 }
 
-.navbar-header{
+.navbar-brand{
     font-family: 'Playfair Display', serif;
     color: lightgrey;
     font-weight: 600;
     font-size: 30px;
-    padding-right: 90px;
+    padding-right: 70px;
+    text-decoration: none;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
 }
 
 
