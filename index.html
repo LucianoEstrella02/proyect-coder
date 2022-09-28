@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Desarrollo Web - Coder</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,11 @@
 
 <body>
     <header>
-        <h1>GenBio Laboratorio</h1>
-        <img class="logo" src="./assets/logo.png" alt="LogoGenBio">
-
-        <nav class="menu__ppal">
+        <div class="conteiner">
+            <!-- <h1>GenBio Laboratorio</h1> -->
+            <img class="logo" src="./assets/logo.png" alt="LogoGenBio">
+        </div>
+        <!-- <nav class="menu__ppal">
             <ul >
                 <a href="./pages/nosotros.html">
                     <li id="lista">Nosotros</li>
@@ -39,12 +41,32 @@
                 </a>
             </ul>
 
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-header" href="#">GenBio Laboratorio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-center">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Prestaciones</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Ingresar</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-       
+
 
     </header>
     <main>
-     
+
         <section class="portada">
             <div class="portada__texto">
                 <h1>Tu Genética Es El Futuro</h1>
@@ -55,10 +77,10 @@
                 <h2 id="titulo-cartel">NUEVO HORARIO DE ATENCIÓN</h2>
                 <p>Lunes a Viernes de 10am a 17 pm</p>
                 <p>Sábados de 8am a 13pm</p>
-                <h2 id="titulo-cartel" >HORARIOS DE EXTRACCIÓN</h2>
+                <h2 id="titulo-cartel">HORARIOS DE EXTRACCIÓN</h2>
                 <p>7am a 10am</p>
             </div>
-        
+
 
             <div>
                 <img id="vacunate" src="./assets/vacunate.png" alt="">
@@ -66,13 +88,17 @@
             </div>
         </section>
 
-        <div> 
+        <div>
             <h1 class="tener-en-cta__titulo">¿QUÉ DEBEMOS TENER EN CUENTA?</h1>
-            
-          <div class="tener-en-cta__texto">
-            <p>El análisis de sangre debe hacerse, en muchos casos, en ayunas (sin ingerir alimentos, al menos, las 8 horas anteriores). En         especial cuando hay que medir valores como el colesterol, la glucosa o los triglicéridos, que se debe suspender la ingesta unas 12hs.
-            Siempre deberemos informar de cualquier medicamento que estemos tomando, ya que algunos podrían interferir con los resultados de la analítica. Por ejemplo, los analgésicos, los antiinflamatorios o los corticoides orales.</p>
-          </div>
+
+            <div class="tener-en-cta__texto">
+                <p>El análisis de sangre debe hacerse, en muchos casos, en ayunas (sin ingerir alimentos, al menos, las
+                    8 horas anteriores). En especial cuando hay que medir valores como el colesterol, la glucosa o los
+                    triglicéridos, que se debe suspender la ingesta unas 12hs.
+                    Siempre deberemos informar de cualquier medicamento que estemos tomando, ya que algunos podrían
+                    interferir con los resultados de la analítica. Por ejemplo, los analgésicos, los antiinflamatorios o
+                    los corticoides orales.</p>
+            </div>
         </div>
 
         <h2 id="hiv">CONTROLATE ¡MEJOR AHORA QUE NUNCA!</h2>
@@ -88,7 +114,7 @@
             </div>
         </section>
 
-        
+
 
         <h2 id="atencion">¡¡ IMPORTANTE !!</h2>
 
@@ -98,12 +124,12 @@
             </div>
 
             <div>
-                <img  class="cada_cto_img" src="./assets/analisis-sangre-infografia.jpg" alt="">
+                <img class="cada_cto_img" src="./assets/analisis-sangre-infografia.jpg" alt="">
             </div>
 
         </section>
     </main>
-    
+
     <footer>
 
         <div>
@@ -141,8 +167,9 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>

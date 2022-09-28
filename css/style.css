@@ -29,25 +29,21 @@ header{
     opacity: 90%;
 }
 
-@media (min-width: 370px){
-    .header{
-        flex-direction: column;
-    }
-    .menu__ppal{
-        flex-direction: column;
-    }
-    .portada{
-        display: none;
-    }
+.navbar-header{
+    font-family: 'Playfair Display', serif;
+    color: lightgrey;
+    font-weight: 600;
+    font-size: 30px;
+    padding-right: 90px;
 }
 
 
-header nav{
+/* header nav{
     width: 95%;
-}
+} */
 
 
-.menu__ppal ul {
+/* .navbar-nav {
     
     display: flex;
     justify-content: space-around;
@@ -55,7 +51,7 @@ header nav{
     margin-top: 12px;
     
     
-}
+} */
 
 
 .portada{
@@ -106,18 +102,18 @@ header nav{
 .logo{
     width: 190px;
     height: 100px;
-    cursor: pointer;
+    /* cursor: pointer;
     transition: all 2s ease-in-out;
     transition-timing-function: cubic-bezier(.17,.67,.96,.09);
     box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
-    -webkit-transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out; */
 }
 
-.logo:hover{
+/* .logo:hover{
     transform: scale(125%);
     box-shadow: 5px 5px 5px white ;
     border-radius: 100%;
-}
+} */
 
 
 ul{
@@ -125,7 +121,7 @@ ul{
 }
 
 
-#lista{
+.nav-link{
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     margin: 20px;
@@ -139,7 +135,7 @@ ul{
     transition: all .4s ease-out;   
 }
 
-#lista:hover{
+.nav-link:hover{
     transform: scale(1.2);
     text-decoration: underline;
     
