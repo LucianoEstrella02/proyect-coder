@@ -16,6 +16,14 @@ a{
     color: black;
     text-decoration: none;
 }
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ----------------------------UTILIDADES (VARIAS)--------------------------------------------------*/
+
+/* TEXTO */
+.texto{
+    text-align: justify;
+}
 
 /* COLORES */
 
@@ -43,6 +51,10 @@ a{
 
 .bg-footer {
     background: #D8E9A8;
+}
+
+.bg-titulo{
+    background: papayawhip;
 }
 
 /* Font Family */
@@ -78,8 +90,6 @@ header{
 .logo {
     width: 120px;
     margin-left: 20%;
-    
-
 }
 
 .name {
@@ -166,9 +176,6 @@ header{
 
 
 
-
-
-/*Pie de Pagina (Footer)*/
 
 
 
