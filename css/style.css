@@ -1,651 +1,167 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    
-    
-}
-
-
-a {
-    text-decoration: none;
-}
-
-/*-----------------Cabecera de la pagina-------------*/
-header{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    text-align: center;
-    color: white;
-    padding: 5px;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    opacity: 90%;
-}
-
-.navbar-brand{
-    font-family: 'Playfair Display', serif;
-    color: lightgrey;
-    font-weight: 600;
-    font-size: 30px;
-    padding-right: 70px;
-    text-decoration: none;
-}
-.navbar-brand:focus, .navbar-brand:hover {
-     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-
-}
-
-
-/* header nav{
-    width: 95%;
-} */
-
-
-/* .navbar-nav {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;  
-    margin-top: 12px;
-    
-    
-} */
-
-
-.portada{
-    
-    background-image: url(../assets/portadapricipal.gif);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-      
-}
-
-.portada__nosotros{
-    
-    background-image: url(../assets/portada-nosotros.jpg);
-    background-position: center;
-    background-size:cover;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    
-      
-
-}
-
-.portada__prestaciones{
-    background-image: url(../assets/prestaciones-1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 97vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-
-.portada__texto{
-    margin-left: 30px;
-    font-size: 30px;
-    color: #f7f5f3;
-    font-family: 'Playfair Display', serif;
-
-}
-
-.logo{
-    width: 190px;
-    height: 100px;
-    /* cursor: pointer;
-    transition: all 2s ease-in-out;
-    transition-timing-function: cubic-bezier(.17,.67,.96,.09);
-    box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
-    -webkit-transition: all 150ms ease-in-out; */
-}
-
-/* .logo:hover{
-    transform: scale(125%);
-    box-shadow: 5px 5px 5px white ;
-    border-radius: 100%;
-} */
-
-
-ul{
+ul {
     list-style: none;
 }
 
+li{
+    list-style: none;
+}
 
-.nav-link{
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* COLORES */
+
+.c-font {
+    color: papayawhip;
+}
+
+.cl-black {
+    color: black;
+}
+
+.cl-red {
+    color: darkred;
+}
+
+.cl-white {
+    color: white;
+}
+
+/* BACKGROUND COLOR */
+
+.bg-red {
+    background: rgba(214, 34, 34, 0.863);
+}
+
+.bg-footer {
+    background: #D8E9A8;
+}
+
+/* Font Family */
+
+.font-playDisplay {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body {
+
+    background-color: rgba(0, 139, 139, 0.719);
+}
+
+/* ENCABEZADO */
+.navbar {
+    background-image: url(../assets/portadapricipal.gif);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.logo {
+    width: 120px;
+
+}
+
+.name {
+    color: #E4E4E1;
+}
+
+.nav-link {
+    text-decoration: underline;
     font-size: 20px;
     font-family: 'Playfair Display', serif;
-    margin: 20px;
-    padding: 6px;
-    width: 140px;
-    border: 2px solid rgb(48, 185, 140);
-    background-color: rgb(48, 185, 140);;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    transition: all .4s ease-out;   
-}
-
-.nav-link:hover{
-    transform: scale(1.2);
-    text-decoration: underline;
-    
-}
-
-#titulo-cartel{
     margin: 10px;
-    padding: 20px;
-}
-.cartel{
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
-    
+    padding: 4px;
+    font-weight: 570;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    background-color: #3bce9d9d;
 }
 
+.nav-link:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(13, 14, 13);
+    text-decoration: underline;
 
-#horarios{
+}
+
+/* ------------------------------------- */
+
+/* CARTEL DE HORARIOS */
+
+#horarios {
     color: #E4E4E1;
     background-color: #5e95cc;
-    border-radius: 15px;
-    padding: 25px;
+    border-radius: 20px;
+    padding: 20px;
     font-size: 20px;
-    flex-direction: column;
-    border: 10px solid black;
+    border: 15px solid black;
     font-family: 'PT Serif', serif;
     letter-spacing: 2px;
-    text-align: center;
     width: 450px;
-    height: 460px;
+    height: 370px;
     animation-name: horarios;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: static;
-    animation-timing-function:linear ;
+    animation-timing-function: linear;
 }
 
 @keyframes horarios {
-    0%{border-color: rgb(212, 35, 35);}
-    25%{border-color: yellow;}
-    50%{border-color: white;}
-    75%{border-color: green;}
-    100%{border-color: orangered;};     
+    0% {
+        border-color: rgb(212, 35, 35);
+    }
+
+    25% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: white;
+    }
+
+    75% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: orangered;
+    }
+
+    ;
 }
 
-#vacunate{
-    width: 660px;
-    height: 470px;
-    justify-content:  space-around;
-    
-}
-
-#hiv{
-    margin-top: 15px;
-    margin-left: 5px;
-    font-size: 40px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: white;
-    background: red;
-    width: 98vw;
-
-}
-.cartel1{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2%;
-    margin-top: 3%;
-       
-}
-
-.tener-en-cta__titulo{
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: 'Playfair Display', serif;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 40px;
-    color: black;
-    border: 3px solid white;
-    border-radius: 10px;
-    background-color: #D8E9A8;
-
-}
-
-.tener-en-cta__texto{
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    border: 3px solid white;
-    border-radius: 10px;
-    background-color: #D8E9A8;
-    padding: 20px;
-    text-align: justify;
-    font-style: unset;
-    font-weight: 530;
-    letter-spacing: 1px;
-}
-
-.hiv__img{
-    border: 2px solid red;
-    border-radius: 30px;
-    padding: 0px;
-    width: 600px;
-    height: 550px;
-}
-.sifilis__img{
-    border: 2px solid red;
-    border-radius: 30px;
-    padding: 0px;
-    width: 600px;
-    height: 550px;
-}
-
-#atencion{
-    
-    width: 98vw;
-    font-size: 40px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: white;
-    background: rgb(7, 7, 77);
-    
-}
-.diabete__img{
-    border: 2px solid rgb(7, 7, 77);
-    border-radius: 30px;
-    padding: 0px;
-    width: 600px;
-    height: 550px;
-}
-
-.cada_cto_img{
-    border: 2px solid rgb(7, 7, 77);
-    border-radius: 30px;
-    padding: 0px;
-    width: 600px;
-    height: 550px;
-}
-
-/*Ingreso Pacientes*/
-
-#inicio-form{
-    text-align: center;
-    color: rgb(16, 16, 138);;
-    font-family: 'Playfair Display', serif;
-    font-size: 30px
-
-}
-
-
-.contenedor{
-    width: 350px;
-    padding: 10px;
-    
-       
-}
-
-.formulario{
-    border: 3px solid whitesmoke;
-    width: 370px;
-    box-shadow: 0px 0px 2px 2px white;
-    margin-bottom: 50px;
-    margin-left: 37%;
-    margin-top: 50px;
-    padding: 10px;
-}
+/* --------------------------------------------------- */
 
 
 
-input[type="text"],
-input[type="password"],
-input[type="email"]{
-    font-family: 'Playfair Display', serif;
-    font-size: 12px;
-    width: 20rem;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
-.input-contenedor{
-    margin-bottom: 15px;
-    
-    
-}
-
-.icon{
-    font-size: 25px;
-    padding: 10px;
-    min-width: 50px;
-    text-align: center;
-    color: rgb(16, 16, 138);
-    border: none;
-}
-
-.button{
-    font-family: 'Playfair Display', serif;
-    border: none;
-    width: 20rem;
-    color: white;
-    font-size: 20px;
-    background: rgb(16, 16, 138);
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-.button:hover{
-    background: cadetblue;
-
-}
 
 
-#texto{
-    font-family: 'Playfair Display', serif;
-    margin: 13px;
-    text-align: center;
-
-}
-
-.link{
-    text-decoration: underline;
-    color:  rgb(16, 16, 138);
-    font-weight: 600;
-}
-
-.link:hover{
-    color: cadetblue;
-}
-
-/* Nosotros*/
 
 
-.nosotros-img{
-    align-content: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 98.5%;
-    border-radius: 30px;
-    border: 2px solid white;
-}
 
-.historia{
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    background-color: #EAE3D2;
-    font-size: 45px;
-    text-decoration: underline;
-}
 
-.historia__texto{
-    
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #EAE3D2;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px;
-    text-align: justify;
-    font-style: normal;
-    font-weight: 530;
-    letter-spacing: 1px;
-    line-height: 30px;
 
-}
-
-/*Prestaciones*/
-
-.prestaciones_titulo{
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    background-color: #EAE3D2;
-    font-size: 35px;
-}
-.prestaciones{
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    font-weight: 600;
-}
-
-.tabla__titulo{
-    
-    font-family: 'Playfair Display', serif;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 35px;
-    color: rgb(0, 0, 0);
-    border: 3px solid #EAE3D2;
-    background-color: #EAE3D2;
-}
-
-.tabla_header{
-    font-family: 'Playfair Display', serif;
-    font-size: 25px;
-    color: #EAE3D2;
-    padding-top:10px;
-    padding-bottom: 15px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(48, 185, 140);
-    padding: 15px;
-    margin-top: 30px;
-    border: 2px solid #EAE3D2;
-    
-}
-
-.desc{
-    text-decoration: none;
-    color: green;
-    cursor: pointer;
-    transition: all .4s ease-out;
-}
-
-.desc:hover{
-    transform: scale(1.2);
-
-}
-
-.tabla__determincion{
-    font-family: 'Playfair Display', serif;
-    padding-left: 20px;
-    padding-bottom: 15px;
-    border: 1px solid white;
-    text-align: center;
-    padding: 15px;
-    align-content: center;
-}
-
-.tabla{
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 30px;
-    text-align: center;
-    font-size: 20px;
-   
-}
-
-/*Contacto*/
-
-.cuadro{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    align-items: center;
-    align-content: center;
-}
-
-.ubicacion{
-    justify-content: center;
-    align-content: center;
-    padding: 10px;  
-}
-
-.ubicacionMapa{
-    
-    width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.582);
-    border-radius: 30px;
-}
-
-.contacto{
-    
-    text-align: center;
-    background-color: #EAE3D2;
-    font-family: 'Playfair Display', serif;
-    border: 3px solid black;
-    border-radius: 20px ;  
-}
-.direccion{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.6px;
-}
-.house{
-    margin: 10px;
-}
-
-.cuadro2{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(1,55vh);
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
-    margin-left: 10%;
-}
-.consulta{
-   display: flex;
-   justify-content: space-around;
-   flex-direction: column;
-   
-}
-.consulta_1{
-    width: 50%;
-    margin: 10px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    
-}
-
-.consulta_2{
-    width: 75%;
-    margin: 10px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 17px;
-    border-radius: 10px;
-}
-.consulta_3{
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.enviarConsulta{
-    justify-content: center;
-    font-size: 15px;
-    width: 110px;
-    height: 50px;
-    margin-top: -20%;
-    margin-left: 15%;
-    margin-bottom: 2%;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    border: 1px solid black;
-    border-radius: 15px;
-}
 
 
 /*Pie de Pagina (Footer)*/
 
-footer{
-    height: 24vh;
-    background: #A5C9CA;
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-}
 
 
-#titulo-footer{
-    text-decoration: underline;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.link-footer{
-    text-decoration: none;
-    color: black;
-}
-
-.footer__list{
-    text-align: justify;
-    font-size: 18px;
-    transition: all .4s ease-in-out;
-}
-
-.footer__list :hover{
-    transform: scale(1.2);
-    color: yellow;
-}
-
-.footer__list1{
-    
-    text-align: center;
-    font-size: 18px;
-    transition: all .4s ease-in-out;
-}
-
-.footer__list1 :hover{
-    transform: scale(1.2);
-    color: yellow;
-}
-
-.footer__list2{
-    text-align: center;
-    font-size: 18px;
-}
-
-.icons{
-    font-size: 25px;
-    margin-bottom: 10px ;
-}
-
-.icons-1{
-    font-size: 30px;
-    margin-bottom: 15px;
-}

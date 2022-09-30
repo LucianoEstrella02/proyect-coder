@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Desarrollo Web - Coder</title>
+    <title>GenBio Laboratorio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,156 +20,144 @@
 </head>
 
 <body>
-    <header>
-        <div class="conteiner">
-            <!-- <h1>GenBio Laboratorio</h1> -->
-            <img class="logo" src="./assets/logo.png" alt="LogoGenBio">
+
+    <header class="navbar navbar-expand-lg border-bottom d-flex align-items-lg-start">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="logo">
+                <h1 class="name">GenBioLab</h1>
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active c-font" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item fw-bolder ">
+                        <a class="nav-link c-font" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link c-font" href="./pages/prestaciones.html">Prestaciones</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link c-font" href="./pages/ingresar.html">Ingresar</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <!-- <nav class="menu__ppal">
-            <ul >
-                <a href="./pages/nosotros.html">
-                    <li id="lista">Nosotros</li>
-                </a>
-                <a href="./pages/prestaciones.html">
-                    <li id="lista">Prestaciones</li>
-                </a>
-                <a href="./pages/contacto.html">
-                    <li id="lista">Contacto</li>
-                </a>
-                <a href="./pages/ingresar.html">
-                    <li id="lista">Ingresar</li>
-                </a>
-            </ul>
-
-        </nav> -->
-
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="./index.html">GenBio Laboratorio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav justify-content-center">
-                        
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                        <a class="nav-link" href="./pages/prestaciones.html">Prestaciones</a>
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        <a class="nav-link" href="./pages/ingresar.html">Ingresar</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-
     </header>
     <main>
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <img src="./assets/vacunate.png" alt="" class="w-100">
+                </div>
 
-        <section class="portada">
-            <div class="portada__texto">
-                <h1>Tu Genética Es El Futuro</h1>
-            </div>
-        </section>
-        <section class="cartel">
-            <div id="horarios">
-                <h2 id="titulo-cartel">NUEVO HORARIO DE ATENCIÓN</h2>
-                <p>Lunes a Viernes de 10am a 17 pm</p>
-                <p>Sábados de 8am a 13pm</p>
-                <h2 id="titulo-cartel">HORARIOS DE EXTRACCIÓN</h2>
-                <p>7am a 10am</p>
-            </div>
+                <div class="col-lg-6 m-lg-4 m-3" id="horarios">
+                    <h1 class="text-center text-decoration-underline cl-black"> NUEVO HORARIO DE ATENCIÓN</h1>
+                    <p class="text-center">Lunes a Viernes de 10am a 17 pm</p>
+                    <p class="text-center">Sábados de 8am a 13pm</p>
+                    <h2 class="text-center text-decoration-underline cl-red">HORARIOS DE EXTRACCIÓN</h2>
+                    <p class="text-center">7am a 10am</p>
 
-
-            <div>
-                <img id="vacunate" src="./assets/vacunate.png" alt="">
-
+                </div>
             </div>
         </section>
 
-        <div>
-            <h1 class="tener-en-cta__titulo">¿QUÉ DEBEMOS TENER EN CUENTA?</h1>
+        <section>
+            <div class="container-fluid text-center shadow p-3 mb-3 bg-body rounded font-playDisplay">
+                <h1>¿QUÉ DEBEMOS TENER EN CUENTA?</h1>
+            </div>
 
-            <div class="tener-en-cta__texto">
-                <p>El análisis de sangre debe hacerse, en muchos casos, en ayunas (sin ingerir alimentos, al menos, las
-                    8 horas anteriores). En especial cuando hay que medir valores como el colesterol, la glucosa o los
-                    triglicéridos, que se debe suspender la ingesta unas 12hs.
+            <div class="container mt-2 ">
+                <p class=" border border-5 p-3 text-center fs-3 cl-black font-verdana bg-body rounded-4">El análisis de sangre debe
+                    hacerse, en muchos
+                    casos, en ayunas (sin ingerir alimentos, al menos, las 8 horas anteriores). En especial cuando hay
+                    que medir valores como el colesterol, la glucosa o los triglicéridos, que se debe suspender la
+                    ingesta unas 12hs.
                     Siempre deberemos informar de cualquier medicamento que estemos tomando, ya que algunos podrían
-                    interferir con los resultados de la analítica. Por ejemplo, los analgésicos, los antiinflamatorios o
-                    los corticoides orales.</p>
+                    interferir con los resultados de la analítica. Por ejemplo, los analgésicos,medicaciones tiroideas,
+                    los antiinflamatorios o los corticoides orales.</p>
+
             </div>
+        </section>
+
+        <section>
+            <div
+                class=" container text-center shadow p-3 mb-5 bg-red rounded cl-white border border-5 border border-dark">
+                <h2 class="fs-1 text-decoration-underline font-playDisplay">CONTROLATE ¡MEJOR TARDE AHORA QUE NUNCA!</h2>
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <img src="./assets/sifilis.jpg" alt="" class="w-100 rounded shadow">
+                        </div>
+
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <img src="./assets/campana-sida.jpg" class="w-100 rounded-4 shadow" alt="">
+
+                        </div>
+
+                    </div>
+        </section>
         </div>
 
-        <h2 id="hiv">CONTROLATE ¡MEJOR AHORA QUE NUNCA!</h2>
+        <footer class="container-fluid bg-footer cl-black">
 
-        <section class="cartel1">
+            <div class="container">
 
-            <div>
-                <img class="hiv__img" src="./assets/campana-sida.jpg" alt="camp-hiv">
+                <div class="row align-items-ba justify-content-between">
 
+                    <div class="p-3 col-lg-2">
+                        <h4 class="text-center text-decoration-underline ">Links</h4>
+                        <div class=" d-flex justify-content-center flex-lg-column align-items-lg-center fs-5 ">
+                            <a href="./pages/nosotros.html" class="px-2 p-lg-1">
+                                <i>Nosotros</i>
+                            </a>
+                            <a href="./pages/prestaciones.html" class="px-2 p-lg-1">
+                                <i >Prestaciones</i>
+                            </a>
+                            <a href="./pages/contacto.html" class="px-2 p-lg-1">
+                                <i >Contacto</i>
+                            </a>
+                            <a href="./pages/ingresar.html" class="px-2 p-lg-1">
+                                <i >Ingresar</i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-3 col-lg-4">
+                        <h4 class="text-center p-2 p-lg-0 text-decoration-underline">Nuestras Redes</h4>
+                        <div class=" fs-2 d-flex justify-content-around mt-lg-5">
+                            <i class="fa-brands fa-facebook icons py-lg-2"></i></li>
+                            <i class="fa-brands fa-instagram icons py-lg-2"></i>
+                            <i class="fa-brands fa-twitter icons py-lg-2"></i>
+                            <i class="fa-brands fa-youtube icons py-lg-2"></i>
+                        </div>
+                    </div>
+
+                    <div class="p-3 col-lg-4">
+                        <h4 class="text-center p-2 p-lg-0 text-decoration-underline">Escribinos</h4>
+
+                        <div class="d-flex flex-lg-column justify-content-around  ">
+                             <span class="fs-4 font-playDisplay me-5"><i class="fa-solid fa-envelope icons fs-2 p-2 "></i>genbiolab@gmailcom</span> 
+                            
+                            <span class="fs-4 font-playDisplay me-5"><i class="fa-brands fa-whatsapp icons fs-2 p-2 "></i> 0261-5003634</span>
+                            
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div>
-                <img class="sifilis__img" src="./assets/sifilis.jpg" alt="">
-            </div>
-        </section>
+        </footer>
 
-
-
-        <h2 id="atencion">¡¡ IMPORTANTE !!</h2>
-
-        <section class="cartel">
-            <div>
-                <img class="diabete__img" src="./assets/diabetes.jpeg" alt="">
-            </div>
-
-            <div>
-                <img class="cada_cto_img" src="./assets/analisis-sangre-infografia.jpg" alt="">
-            </div>
-
-        </section>
     </main>
-
-    <footer>
-
-        <div>
-            <h4 id="titulo-footer">Links</h4>
-            <ul class="footer__list">
-                <a class="link-footer" href="./pages/nosotros.html">
-                    <li>Nosotros</li>
-                </a>
-                <a class="link-footer" href="./pages/prestaciones.html">
-                    <li>Prestaciones</li>
-                </a>
-                <a class="link-footer" href="./pages/contacto.html">
-                    <li>Contacto</li>
-                </a>
-                <a class="link-footer" href="./pages/ingresar.html">
-                    <li>Ingresar</li>
-                </a>
-            </ul>
-        </div>
-
-        <div>
-            <h4 id="titulo-footer">Seguinos en nuestras redes</h4>
-            <ul class="footer__list1">
-                <li><i class="fa-brands fa-facebook icons-1"></i></li>
-                <li><i class="fa-brands fa-instagram icons-1"></i></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4 id="titulo-footer">Escribinos</h4>
-            <ul class="footer__list2">
-                <li><i class="fa-solid fa-envelope icons"></i> genbiolab@gmailcom</li>
-                <a href="https://www.whatsapp.com/?lang=es"></a>
-                <li><i class="fa-brands fa-whatsapp icons"></i> 0261-5003634</li>
-            </ul>
-        </div>
-    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
+</html>
