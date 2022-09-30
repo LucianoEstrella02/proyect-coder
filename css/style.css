@@ -16,7 +16,6 @@ a{
     color: black;
     text-decoration: none;
 }
-/* ----------------------------------------------------------------------------------------------- */
 
 /* ----------------------------UTILIDADES (VARIAS)--------------------------------------------------*/
 
@@ -26,6 +25,10 @@ a{
 }
 
 /* COLORES */
+
+.navbar-nav .nav-link.active{
+    color: papayawhip;
+}
 
 .c-font {
     color: papayawhip;
@@ -73,19 +76,11 @@ body {
 
     background-image: linear-gradient(to top, #30cfd0 0%, #080e67c0 100%);
 }
-
-/* ENCABEZADO */
+/*----- ENCABEZADO------ */
 header{
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     height: 25vh;
 }
-/* header {
-    background-image: url(../assets/portadapricipal.gif);
-    height: 30vh;
-    background-position: center;
-    background-size: cover;
-} */
-
 
 .logo {
     width: 120px;
@@ -104,7 +99,7 @@ header{
     margin: 10px;
     padding: 4px;
     font-weight: 570;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.1px;
     cursor: pointer;
     transition: all .4s ease-out;
     border-radius: 10px;
@@ -118,6 +113,12 @@ header{
     text-decoration: underline;
 
 }
+
+/* --- PROPIEDADES DE IMAGENES DE PORTADA---*/
+.portada {
+    background-position: center;
+    background-size: cover;
+} 
 
 /* ------------------------------------- */
 
@@ -165,7 +166,6 @@ header{
     ;
 }
 
-/* --------------------------------------------------- */
 
 /* ----------TABLA DE INDICACIONES------------- */
 
@@ -229,8 +229,91 @@ header{
     font-size: 20px;
    
 }
+/* ----------INGRESO DE PACIENTES------------- */
+.inicio-form{
+    text-align: center;
+    color: rgb(16, 16, 138);
+    font-size: 30px;
+    font-weight: 600;
+
+}
 
 
+.contenedor{
+    width: 350px;
+    padding: 10px;
+    
+       
+}
+
+.formulario{
+    border: 3px solid whitesmoke;
+    width: 370px;
+    box-shadow: 0px 0px 2px 2px white;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    width: 20rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    
+}
+
+.icon{
+    font-size: 25px;
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+    color: rgb(16, 16, 138);
+    border: none;
+}
+
+.button{
+    font-family: 'Playfair Display', serif;
+    border: none;
+    width: 20rem;
+    color: white;
+    font-size: 20px;
+    background: rgb(16, 16, 138);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+
+}
+
+.button:hover{
+    background: cadetblue;
+    transform: scale(1.1);
+}
+
+.textoIngreso{
+    font-family: 'Playfair Display', serif;
+    margin: 13px;
+    text-align: center;
+}
+
+.link{
+    text-decoration: underline;
+    color:  rgb(16, 16, 138);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.link:hover{
+    color: cadetblue;
+}
 
 
 
