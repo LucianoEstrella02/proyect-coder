@@ -59,25 +59,32 @@ a{
 
 body {
 
-    background-color: rgba(0, 139, 139, 0.719);
+    background-image: linear-gradient(to top, #30cfd0 0%, #080e67c0 100%);
 }
 
 /* ENCABEZADO */
-.navbar {
+header{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 25vh;
+}
+/* header {
     background-image: url(../assets/portadapricipal.gif);
     height: 30vh;
     background-position: center;
     background-size: cover;
-}
+} */
 
 
 .logo {
     width: 120px;
+    margin-left: 20%;
+    
 
 }
 
 .name {
-    color: #E4E4E1;
+    color: #050505;
+    font-family: 'Cinzel', serif;
 }
 
 .nav-link {
@@ -92,7 +99,7 @@ body {
     transition: all .4s ease-out;
     border-radius: 10px;
     border: 2px solid whitesmoke;
-    background-color: #3bce9d9d;
+    background-color: #3bce9d;
 }
 
 .nav-link:hover {
