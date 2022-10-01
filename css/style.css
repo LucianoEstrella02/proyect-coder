@@ -60,6 +60,11 @@ a{
     background: papayawhip;
 }
 
+.bg-btn{
+    background-color: rgba(0, 0, 205, 0.507);
+    color: papayawhip;
+}
+
 /* Font Family */
 
 .font-playDisplay {
@@ -166,7 +171,11 @@ header{
     ;
 }
 
-
+/* ------ FORMULARIO DE CONTACTO----- */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 43.5 rem;
+    
+}
 /* ----------TABLA DE INDICACIONES------------- */
 
 .accordion-button{
