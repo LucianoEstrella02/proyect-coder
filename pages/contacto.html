@@ -94,29 +94,29 @@
 
     <div class="container">
         <div class="row align-items-ba justify-content-lg-center">
-            <div class="col-lg-4 m-4">
+            <div class="container col-lg-4 m-4">
 
-                <div class="mb-3">
-                    <label for="nomApInput" class="form-label w-100">Nombre y Apellido</label>
+                <div class="mb-3 ">
+                    <label for="nomApInput" class="form-label w-100 font-playDisplay">Nombre y Apellido</label>
                     <input type="text" class="form-control" id="nomApInput" name="nomApInput"
                         placeholder="Escriba su Nombre y Apeliido">
                 </div>
 
-                <div class="mb-3">
-                    <label for="emailInput" class="form-label w-100">Email</label>
+                <div class="mb-3 ">
+                    <label for="emailInput" class="form-label w-100 font-playDisplay">Email</label>
                     <input id="emailInput" class="form-control" type="email" name="email"
                         placeholder="ejemplo123@ejemplo.com">
                 </div>
 
-                <div class="mb-3">
-                    <label for="telInput" class="form-label">Telefono</label>
-                    <input id="telInput" type="number" class="form-control" name="telIpunt"
+                <div class="mb-3 col-11 ">
+                    <label for="telInput" class="form-label font-playDisplay">Telefono</label>
+                    <input id="telInput" type="number" class="form-control font-playDisplay" name="telIpunt"
                         placeholder="Numero de contacto">
                 </div>
 
-                <div class="mb-3">
-                    <label for="ejDataList" class="form-label">Motivo de Consulta</label>
-                    <input class="form-control" list="listOptions" id="ejDataList"
+                <div class="mb-3 col-11">
+                    <label for="ejDataList" class="form-label font-playDisplay">Motivo de Consulta</label>
+                    <input class="form-control font-playDisplay" list="listOptions" id="ejDataList"
                         placeholder="Escriba su para buscar su motivo de consulta...">
                     <datalist id="listOptions">
                         <option value="Reclamos/sugerencias">
@@ -128,20 +128,24 @@
                 </div>
 
 
-                <div class="mb-3">
-                    <label for="fileInput" class="form-label">Cargar Orden Médica</label>
-                    <input id="fileInput" type="file" value="Examinar" class="form-control">
+                <div class=" mb-3 col-11 ">
+                    <label for="fileInput" class="form-label font-playDisplay">Cargar Orden Médica</label>
+                    <input id="fileInput" type="file" value="Examinar" class="form-control font-playDisplay">
                 </div>
 
-                <input class="btn btn-lg bg-btn" type="submit" value="Enviar">
+                
 
             </div>
             
 
-                 <div class="col-lg-5 d-flex m-4">
-                    <label for="comentId" class="form-label"></label>
-                    <textarea id="comentId" class="form-control" cols="30" rows="10"
+                 <div class=" col col-lg-5 d-flex m-4">
+                    <label for="comentId" class="form-label font-playDisplay"></label>
+                    <textarea id="comentId" class="form-control font-playDisplay" cols="30" rows="10"
                         placeholder="Comentarios:"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-center mb-3">
+                    <input class="btn btn-lg bg-btn font-playDisplay " type="submit" value="Enviar">
                 </div>
 
         </div>
