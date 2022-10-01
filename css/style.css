@@ -76,6 +76,7 @@ a{
 }
 
 
+/* -------------CUERPO----------------- */
 
 body {
 
@@ -172,8 +173,9 @@ header{
 }
 
 /* ------ FORMULARIO DE CONTACTO----- */
-input[type="text"], input[type="password"], input[type="email"] {
-    width: 43.5 rem;
+.from-control{
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
     
 }
 /* ----------TABLA DE INDICACIONES------------- */
