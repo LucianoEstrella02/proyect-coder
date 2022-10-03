@@ -53,7 +53,7 @@ a{
 }
 
 .bg-footer {
-    background: #06283D;
+    background: #D8E9A8;
 }
 
 .bg-titulo{
@@ -81,12 +81,12 @@ a{
 body {
 
     /* background-image: linear-gradient(to top, #30cfd0 0%, #080e67c0 100%); */
-    background: #256D85;
+    background-color: #256D85;
 }
 /*----- ENCABEZADO------ */
 header{
-    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    height: 25vh; */
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    /* height: 25vh; */
     background-color: #06283D;
 }
 
@@ -96,7 +96,7 @@ header{
 }
 
 .name {
-    color: papayawhip;
+    color: whitesmoke;
     font-family: 'Cinzel', serif;
 }
 
@@ -134,7 +134,7 @@ header{
 
 #horarios {
     color: #E4E4E1;
-    background-color: #5e95cc;
+    background-color: #417D7A;
     border-radius: 20px;
     padding: 20px;
     font-size: 20px;
