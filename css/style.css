@@ -150,25 +150,34 @@ header{
     animation-timing-function: linear;
 }
 
+
+
 @keyframes horarios {
     0% {
         border-color: rgb(212, 35, 35);
+        rotate: -5deg;
+        scale: 1.1;
+    
     }
 
     25% {
         border-color: yellow;
+        rotate: 2deg;
     }
 
     50% {
         border-color: white;
-    }
+        rotate: 5deg;
+    }   
 
     75% {
         border-color: green;
-    }
+        rotate: 2deg;
+    }   
 
     100% {
         border-color: orangered;
+        rotate: -5deg;
     }
 
     ;
@@ -273,6 +282,7 @@ input[type="email"]{
 .link:hover{
     color: cadetblue;
 }
+
 
 
 
