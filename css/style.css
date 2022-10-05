@@ -132,17 +132,44 @@ header{
 
 /* CARTEL DE HORARIOS */
 
+.vacunate{
+    animation-name: vacunate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: static;
+    animation-timing-function: linear;
+}
+
+@keyframes vacunate{
+    0%{
+        rotate: -5deg;
+
+    }
+    25%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 5deg;
+    }
+    75%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: -5deg;
+    }
+}
+
 #horarios {
     color: #E4E4E1;
     background-color: #417D7A;
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     font-size: 20px;
     border: 15px solid black;
     font-family: 'PT Serif', serif;
-    letter-spacing: 2px;
-    width: 450px;
-    height: 370px;
+    letter-spacing: 1px;
+    width: 425px;
+    height: 352px;
     animation-name: horarios;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -155,40 +182,40 @@ header{
 @keyframes horarios {
     0% {
         border-color: rgb(212, 35, 35);
-        rotate: -5deg;
-        scale: 1.0;
+        
+        
     
     }
 
     25% {
         border-color: yellow;
-        rotate: 2deg;
-        scale: 1.1;
+        
+        
 
     }
 
     50% {
         border-color: white;
-        rotate: 5deg;
-        scale: 1.15;
+        
+       
 
     }   
 
     75% {
         border-color: green;
-        rotate: 2deg;
-        scale: 1.1;
+        
+        
 
     }   
 
     100% {
         border-color: orangered;
-        rotate: -5deg;
-        scale: 1.0;
+        
+        
 
     }
 
-    ;
+    
 }
 
 /* ------ FORMULARIO DE CONTACTO----- */
