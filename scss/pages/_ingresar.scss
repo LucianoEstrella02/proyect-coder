@@ -1,0 +1,55 @@
+.inicio-form{
+    text-align: center;
+    color: $letra-bienvenido;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.contenedor{
+    width: 350px;
+    padding: 10px;
+}
+
+.formulario{
+    border: 3px solid whitesmoke;
+    width: 370px;
+    box-shadow: 0px 0px 2px 2px white;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-family: $fonts-title;
+    font-size: 12px;
+    width: 20rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;   
+}
+
+.icon{
+    font-size: 25px;
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+    color: $letra-bienvenido;
+    border: none;
+}
+
+.button{
+    font-family: $fonts-title;
+    border: none;
+    width: 20rem;
+    color: $color-letra;
+    font-size: 20px;
+    background: $letra-bienvenido;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

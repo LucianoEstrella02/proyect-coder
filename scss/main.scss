@@ -1,0 +1,21 @@
+@import "base/reset";
+
+@import "utils/variables";
+@import "utils/text";
+@import "utils/animations";
+@import "utils/fonts";
+
+@import "layout/body";
+@import "layout/header";
+@import "layout/footer";
+
+@import "componentes/titles";
+@import "componentes/buttons";
+@import "componentes/images";
+
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/contacto";
+@import "pages/prestacioness";
+@import "pages/ingresar";
+@import "pages/registro";

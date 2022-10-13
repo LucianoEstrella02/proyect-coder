@@ -1,0 +1,16 @@
+.bg-noticia{
+    background-color: $fondo-recomendacion;
+}
+
+.horarios {
+    color: #E4E4E1;
+    background-color: $fondo-horarios;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: 15px solid black;
+    font-family: $fonts-horarios;
+    letter-spacing: 1px;
+    width: 425px;
+    height: 352px;
+}

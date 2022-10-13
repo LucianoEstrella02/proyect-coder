@@ -1,0 +1,12 @@
+.textoIngreso{
+    font-family: $fonts-title;
+    margin: 13px;
+    text-align: center;
+}
+
+.linkIngreso{
+    text-decoration: underline;
+    color: $letra-bienvenido;
+    font-weight: 600;
+    cursor: pointer;
+}
