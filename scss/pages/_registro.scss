@@ -2,6 +2,7 @@
     font-family: $fonts-title;
     margin: 13px;
     text-align: center;
+    
 }
 
 .linkIngreso{
@@ -9,4 +10,14 @@
     color: $letra-bienvenido;
     font-weight: 600;
     cursor: pointer;
+    transition: all .4s ease-out;
+    &:hover{
+        color: $letras-texto;
+    }
 }
+
+
+    
+ 
+    
+

@@ -1,4 +1,35 @@
 .bg-btn{
     background-color: $fondo-btn;
-    color: $color-letra;
+    color: $letras-texto;
+    transition: all .3s ease-out;
+    
+        &:hover{
+            background: transparent;
+            transform: scale(1.1);
+        }
+    
 }
+
+
+.button{
+    font-family: $fonts-title;
+    border: none;
+    width: 20rem;
+    color: $letras-texto;
+    font-size: 20px;
+    background: $letra-bienvenido;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+
+    &:hover{
+        background: transparent;
+        transform: scale(1.1);
+    }
+}
+
+
+    
+    
+    

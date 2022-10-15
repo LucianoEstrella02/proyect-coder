@@ -1,16 +1,69 @@
+.vacunate{
+    animation-name: vacunate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: static;
+    animation-timing-function: linear;
+}
+
+@keyframes vacunate{
+    0%{
+        rotate: -5deg;
+    }
+    25%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 5deg;
+    }
+    75%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: -5deg;
+    }
+}
+
 .bg-noticia{
     background: $fondo-recomendacion;
 }
 
 .horarios {
-    color: #E4E4E1;
+    color: $letras-texto;
     background-color: $fondo-horarios;
     border-radius: 20px;
     padding: 15px;
     font-size: 20px;
-    border: 15px solid black;
+    border: 15px solid $letras-titulos;
     font-family: $fonts-horarios;
     letter-spacing: 1px;
     width: 425px;
     height: 352px;
+    animation-name: horarios;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: static;
+    animation-timing-function: linear;
 }
+    @keyframes horarios {
+        0% {
+            border-color: $fondo-hiv
+        }
+    
+        25% {
+            border-color: $color-yellow;
+            
+        }
+    
+        50% {
+            border-color: $letras-texto
+        }   
+    
+        75% {
+            border-color: $color-green;
+        }   
+    
+        100% {
+            border-color: $color-orange;
+        } 
+    }
