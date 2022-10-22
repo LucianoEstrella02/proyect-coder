@@ -122,6 +122,16 @@ header {
   background: rgba(214, 34, 34, 0.863);
 }
 
+.img-1 {
+  float: left;
+  margin-right: 20px;
+}
+
+.img-2 {
+  float: right;
+  margin-left: 20px;
+}
+
 .vacunate {
   animation-name: vacunate;
   animation-duration: 3s;
