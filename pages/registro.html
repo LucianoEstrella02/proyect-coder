@@ -18,6 +18,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&display=swap"
         rel="stylesheet">
+        <script defer src="../js/main.js"></script>
 </head>
 
 <body>
@@ -65,9 +66,23 @@
     
                     <div class="contenedor">
                         <div class="input-contenedor">
-                           <label for="nombre-completo"><i class="fa-solid fa-user icon"></i></label>
-                            <input type="text" id="nombre-completo" placeholder="Nombre Completo">
+                           <label for="nombreCompleto"><i class="fa-solid fa-user icon"></i></label>
+                            <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
                         </div>
+                        <div class="input-contenedor">
+                            <label for="dni"></label>
+                            <input type="text" id="dni" placeholder="N° de Documento">
+                        </div>
+                        <div class="input-contenedor">
+                            <label for="edad"></label>
+                            <input type="text" id="fechaNacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
+                        </div>
+                        <div class="input-contenedor">
+                            <label for="obraSocial"></label>
+                            <input type="text" id="obraSocial" placeholder="Obra Social">
+                        </div>
+
+                        
     
                         <div class="input-contenedor">
                             <label for="corre-electronico"><i class="fa-sharp fa-solid fa-envelope icon"></i></label>
@@ -78,6 +93,10 @@
                            <label for="contraseña"> <i class="fa-solid fa-key icon "></i></label>
                             <input type="password" id="contraseña" placeholder="Contraseña">
                         </div>
+                        <div class="input-contenedor">
+                            <label for="contraseña"> </i></label>
+                             <input type="password" id="contraseña" placeholder="Confirmar Contraseña">
+                         </div>
                         <input type="submit" id="registrarse" value="Registrate" class="button">
                         <p class="textoIngreso">Al registrarte, aceptas Bases y condiciones de uso y Política de privacidad</p>
                         <p class="textoIngreso">¿Ya tienes cuenta? <a class="linkIngreso" href="./ingresar.html">Iniciar Sesion</a></p>
@@ -148,6 +167,7 @@
     </footer>
     
     </main>
+    <script src="../js/main.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
     
