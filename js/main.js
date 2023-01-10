@@ -1,46 +1,121 @@
-// // Evento de Boton Registrate
+//Variables (Formulario-PageContacto)
+let nombreContacto = document.querySelector("#nombre");
+let emailContacto = document.querySelector("#email");
+let telContacto = document.querySelector("#telefono");
+let consultaContacto = document.querySelector("#consulta");
+let formularioContacto = document.querySelector("#formulario");
+let informacionContacto = document.querySelector(".info");
+
+//Eventos (Formulario-PageContacto)
+
+nombreContacto.addEventListener("input", function(){
+    if (nombreContacto.value === ""){
+        alert("Este campo es requerido,Gracias");
+    }
+});     
+
+emailContacto.addEventListener("input",function(){
+    if(emailContacto === ""){
+        alert("Este campo es requerido,Gracias");
+    }
+})
+
+telContacto.addEventListener("input",function(){
+    if(telContacto === ""){
+        alert("Este campo es requerido,Gracias");
+    }
+})
+
+consultaContacto.addEventListener("input",function(){
+    if(consultaContacto === ""){
+        alert("Este campo es requerido,Gracias");
+    }
+})
+
+//Informacion del Formulario en el Evento
+
+const mostrarInfo= formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+    informacionContacto.innerHTML=`
+    <div class="alert alert-dark" role="alert">
+    <h5>Muchas Gracias ${nombreContacto.value} por comunicarte con nosotros, en breve nos pondremos en contacto con usted, por el motivo de consulta : ${consultaContacto.value}, al mail  ${emailContacto.value} o mediante medio telefonico al ${telContacto.value}</h5></div> `;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Evento de Boton Registrate
 
 // const btnRegistrate = document.querySelector('#registrarse');
 // btnRegistrate.addEventListener("click",function(){
 //     console.log("click");
 // })
-
-
-
-// //Evento de Imagen Hiv
-
-// const hivImagen = document.querySelector('.imagenHiv');
-
-// hivImagen.onmouseover = ()=>{
-//     hivImagen.style.backgroundImage = 'url("./assets/sifilis.jpg")';   
-//     console.log("cambio1");
-// }
-
-// hivImagen.onmouseout = () =>{
-//     hivImagen.style.backgroundImage = 'url("./assets/yomecuido.jpg")'
-//     console.log("cambio2");
-// }
-console.log("hola");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //variables
+ //variables
 // let nombre;
 // let dni;
 // let obraSocial;
