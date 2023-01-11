@@ -16,8 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Serif&family=Playfair+Display&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -63,12 +61,16 @@
                 <form class="col-lg-5 formulario m-5">
                     <h1 class="inicio-form font-playDisplay">Registrate</h1>
                     
-    
+    <form class="registroform" action="">
                     <div class="contenedor">
                         <div class="input-contenedor ">
                            <label for="nombreCompleto"><i class="fa-solid fa-user icon"></i></label>
-                            <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                            <input type="text" id="nombreCompleto" placeholder="Nombre">
                         </div>
+                        <div class="input-contenedor ">
+                            <label for="apellidoForm"></label>
+                             <input type="text" id="apellidoForm" placeholder="Apellido">
+                         </div>
                         <div class="input-contenedor ">
                             <label for="dni"></label>
                             <input type="text" id="dni" placeholder="N° de Documento">
@@ -77,12 +79,6 @@
                             <label for="edad"></label>
                             <input type="text" id="fechaNacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
                         </div>
-
-                        <div class="input-contenedor ">
-                            <label for="obraSocial"></label>
-                            <input type="text" id="obraSocial" placeholder="Obra Social">
-                        </div>
-                      
     
                         <div class="input-contenedor">
                             <label for="corre-electronico"><i class="fa-sharp fa-solid fa-envelope icon"></i></label>
@@ -168,7 +164,7 @@
     </footer>
     
     </main>
-    <script src="../js/main.js"></script>
+    <script src="../js/registro.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
     
