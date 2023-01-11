@@ -17,9 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Serif&family=Playfair+Display&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 
 <body>
@@ -102,8 +101,12 @@
             <div class="container col-lg-4 m-4">
 
                 <div class="mb-3 ">
-                    <label for="nomApInput" class="form-label w-100 font-playDisplay">Nombre y Apellido</label>
+                    <label for="nomApInput" class="form-label w-100 font-playDisplay">Nombre</label>
                     <input type="text" class="form-control fs-6 " id="nombre" required>
+                </div>
+                <div class="mb-3 ">
+                    <label for="nomApInput" class="form-label w-100 font-playDisplay">Apellido</label>
+                    <input type="text" class="form-control fs-6 " id="apellido" required>
                 </div>
 
                 <div class="mb-3 ">
@@ -120,7 +123,7 @@
                 <div class="mb-3 col-11">
                     <label for="ejDataList" class="form-label font-playDisplay fs-6">Motivo de Consulta</label>
                     <div class="form-floating">
-                        <select class="form-select font-playDisplay fs-6" id="consulta" aria-label="Floating label select example">
+                        <select class="form-select font-playDisplay fs-6" id="consulta" aria-label="Floating label select example"required>
                           <option selected></option>
                           <option value="Reclamos">Reclamos/sugerencias</option>
                           <option value="Indicaciones">Indicaciones</option>
@@ -162,11 +165,11 @@
 
     <div class="container">
         <div class="info"></div>
-      </div>
+    </div>
 
 
 
-    </main>
+    
 
 
 
@@ -227,8 +230,7 @@
     </footer>
 
     </main>
-    <script src="../js/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/contacto.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
 

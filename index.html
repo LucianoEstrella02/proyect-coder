@@ -20,9 +20,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Serif&family=Playfair+Display&display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&display=swap"
-        rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
 </head>
 
 <body>
@@ -127,17 +126,18 @@
 
       
 
-
+<form id="formularioTurno" action="/redireccion">
         <div class="container">
             <div class="input-group my-3">
-                <span class="input-group-text">Nombre y Apellido</span>
-                <input type="text" aria-label="First name" class="form-control fs-6">
+                <label class="input-group-text">Nombre y Apellido</label>
+                <input type="text" nombre="nombre" aria-label="First name" class="form-control fs-6" id="nombreTurno" required>
                 
               </div>
 
               <div class="input-group mb-3">
                 <label class="input-group-text fs-6" for="inputGroupSelect01">Servicio de Salud</label>
-                <select class="container form-select fs-6" id="inputGroupSelect01">
+                <select class="container form-select fs-6" id="servSalud" required>
+                    <option selected>---</option>
                     <option value="Obra Social">Obra Social</option>
                     <option value="A.R.T">A.R.T</option>
                     <option value="Exámen Médico Laboral">Exámen Médico Laboral</option>
@@ -148,8 +148,9 @@
 
               
         <div class="input-group mb-3">
-            <label class="input-group-text fs-6" for="inputGroupSelect01">Día</label>
-            <select class="container form-select fs-6" id="inputGroupSelect01">
+            <label class="input-group-text fs-6" for="diaTurno">Día</label>
+            <select class="container form-select fs-6" id="diaTurno" required>
+                <option selected>---</option>
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
                 <option value="miercoles">Miercoles</option>
@@ -159,23 +160,29 @@
         </div>
 
         <div class="input-group mb-3">
-            <label class="input-group-text fs-6" for="inputGroupSelect01">Horario</label>
-            <select class="container form-select fs-6" id="inputGroupSelect01">
-                <option value="1">8.00</option>
-                <option value="2">8.15</option>
-                <option value="3">8.30</option>
-                <option value="4">8.45</option>
-                <option value="5">9.00</option>
-                <option value="6">9.15</option>
-                <option value="5">9.30</option>
-                <option value="6">9.45</option>
-                <option value="7">10.00</option>           
+            <label class="input-group-text fs-6" for="horaTurno">Horario</label>
+            <select class="container form-select fs-6" id="horaTurno" required>
+                <option selected>---</option>
+                <option value="8.00">8.00</option>
+                <option value="8.15">8.15</option>
+                <option value="8.30">8.30</option>
+                <option value="8.45">8.45</option>
+                <option value="9.00">9.00</option>
+                <option value="9.15">9.15</option>
+                <option value="9.30">9.30</option>
+                <option value="9.45">9.45</option>
+                <option value="10.00">10.00</option>           
             </select>
         </div>
 
         <div class="col-12 mb-3 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary fs-5">Reservar Turno</button>
+            <button type="submit" id="btn-turno" class="btn btn-primary fs-5">Reservar Turno</button>
           </div>
+    </div>
+</form>
+
+    <div class="container">
+        <div class="turnoReservado"></div>
     </div>
 
 
@@ -242,9 +249,8 @@
             </div>
         </footer>
     </main>
-    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
 </body>
 
