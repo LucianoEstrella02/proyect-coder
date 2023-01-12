@@ -58,57 +58,67 @@
             <div class="row justify-content-center">
 
                 
-                <form class="col-lg-5 formulario m-5">
+         <div class="col-lg-5 formulario m-5">
                     <h1 class="inicio-form font-playDisplay">Registrate</h1>
                     
-    <form class="registroform" action="">
+                     <form class="registroform" id="formRegistro"  action="/redireccion">
                     <div class="contenedor">
                         <div class="input-contenedor ">
                            <label for="nombreCompleto"><i class="fa-solid fa-user icon"></i></label>
-                            <input type="text" id="nombreCompleto" placeholder="Nombre">
+                            <input type="text" id="nombreForm" placeholder="Nombre">
+                            <span class="spanMensajeRequerido"></span>
                         </div>
                         <div class="input-contenedor ">
                             <label for="apellidoForm"></label>
                              <input type="text" id="apellidoForm" placeholder="Apellido">
+                             <span class="spanMensajeRequerido"></span>
                          </div>
                         <div class="input-contenedor ">
                             <label for="dni"></label>
-                            <input type="text" id="dni" placeholder="N° de Documento">
-                        </div>
-                        <div class="input-contenedor ">
-                            <label for="edad"></label>
-                            <input type="text" id="fechaNacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)">
+                            <input type="text" id="dniForm" placeholder="N° de Documento">
+                            <span class="spanMensajeRequerido"></span>
                         </div>
     
                         <div class="input-contenedor">
                             <label for="corre-electronico"><i class="fa-sharp fa-solid fa-envelope icon"></i></label>
-                            <input type="text" id="corre-electronico" placeholder="Correo Electronico">
+                            <input type="email" id="correoForm" placeholder="Correo Electronico">
+                            <span class="spanMensajeRequerido"></span>
                         </div>
     
                         <div class="input-contenedor">
                            <label for="contraseña"> <i class="fa-solid fa-key icon "></i></label>
-                            <input type="password" id="contraseña" placeholder="Contraseña">
+                            <input type="password" id="contrasenaForm" placeholder="Contraseña">
+                            <span class="spanMensajeRequerido"></span>
                         </div>
 
-                        <div class="input-contenedor">
-                            <label for="contraseña"> </i></label>
-                             <input type="password" id="contraseña" placeholder="Confirmar Contraseña">
-                         </div>
-                        <input type="submit" id="registrarse" value="Registrate" class="button">
+                        <!-- <input type="submit" id="registrarse" value="Registrate" class="button"> -->
+
+                        <input type="submit" id="registrarse" class='button btn btn-primary'
+                        value="ENVIAR MENSAJE" style="float: right; margin-top: 10px;">
+
                         <p class="textoIngreso">Al registrarte, aceptas Bases y condiciones de uso y Política de privacidad</p>
                         <p class="textoIngreso">¿Ya tienes cuenta? <a class="linkIngreso" href="./ingresar.html">Iniciar Sesion</a></p>
                     </div>
                 </form>
-
-                <div class="col-lg-7 d-flex align-items-center">
-                    <img src="../assets/portada-nosotros.jpg" class=" w-100 rounded-5 portada mb-3" alt="analitica/cultivo">
-                </div>
-
             </div>
+            <div class="col-lg-7 d-flex align-items-center">
+                <img src="../assets/portada-nosotros.jpg" class=" w-100 rounded-5 portada mb-3" alt="analitica/cultivo">
+            </div>
+        </div>
+     </div>
 
+        <div class=" container text-center">
+            <div class="mjsRegistro"></div>
         </div>
 
     </main>
+
+
+
+
+
+
+
     <footer class="container-fluid bg-footer cl-black border-top border-dark border-3">
 
         <div class="container">
@@ -167,6 +177,7 @@
     <script src="../js/registro.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     </body>
     </html>

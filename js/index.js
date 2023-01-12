@@ -1,14 +1,15 @@
+
 let nombreTurnos = document.querySelector("#nombreTurno");
 let turnoElegido = document.querySelectorAll(".form-select");
 let reservarTurno = document.querySelector("#btn-turno");
 
 
 
-reservarTurno.addEventListener("click",(e)=>{
-    let servSalud=document.querySelector("#servSalud").value;
-    let dia=document.querySelector("#diaTurno").value;
-    let horario=document.querySelector("#horaTurno").value;
-    let turnoReservado=document.querySelector(".turnoReservado");
+reservarTurno.addEventListener("click", (e) => {
+    let servSalud = document.querySelector("#servSalud").value;
+    let dia = document.querySelector("#diaTurno").value;
+    let horario = document.querySelector("#horaTurno").value;
+    let turnoReservado = document.querySelector(".turnoReservado");
 
     turnoReservado.innerHTML = `
     <div class= "alert alert-primary text-center" role="alert">
@@ -20,12 +21,14 @@ reservarTurno.addEventListener("click",(e)=>{
 
 });
 
-reservarTurno.addEventListener("click",()=>{
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'TU TURNO HA SIDO REGISTRADO',
-        showConfirmButton: false,
-        timer: 1500
-      });
-});
+
+reservarTurno.addEventListener("click", () => {
+    
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'TU TURNO HA SIDO REGISTRADO',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    });
