@@ -57,45 +57,42 @@
     <main>
         
         <section>
+        
             <div class="container">
                 <div class="row justify-content-center">
-                    <form class="col-lg-5 formulario m-5">
-                        <h1 class="inicio-form font-playDisplay">Bienvenido</h1>
-            
-                        <div class="contenedor">
-                            <div class="input-contenedor">
-                                <label for="usuario"><i class="fa-solid fa-user icon"></i></label>
-                                <input type="text" id="usuario" placeholder="Usuario">
-                            </div>
-            
-                            <div class="input-contenedor">
-                                <label for="contraseña"><i class="fa-solid fa-key icon"></i>
-                                <input type="password" id="contraseña" placeholder="Contraseña"></label>
-                            </div>
-            
-                            <input type="submit"  id="iniciarSesion" value="Iniciar Sesión" class="button">
-            
-                            <p class="textoIngreso">Al registrarte, aceptas Bases y condiciones de uso y Política de privacidad</p>
-                            <p class="textoIngreso">¿No tienes cuenta? <a class="linkIngreso" href="./registro.html">Registrate</a></p>
-                        </div>
-                    </form>
-
                     <div class="col-lg-7 d-flex align-items-center">
                         <img src="../assets/portada-nosotros.jpg" class=" w-100 rounded-5 portada mb-2" alt="analitica/cultivo">
-                        
                     </div>
 
+                    <form class="col-lg-5 formulario m-5 contenedor"  action="GET">
+                        <h1 class="inicio-form font-playDisplay" id="formPacient">Bienvenido</h1>
+                        
+                        
+                                 <label for="name"><i class="fa-solid fa-user icon"></i></label>
+                                 <input class="input-contenedor" name="name" placeholder="Usuario" id="nombrePaciente" type="text" required>
+                                                    
+                                <label for="password"><i class="fa-solid fa-key icon"></i></label>
+                                <input class="input-contenedor" name="password" placeholder="contraseña" id="contrasena" type="password">
+
+                        <input id="ingresando" class="button btn btn-primary" type="submit" value="Ingresar">
+                    </form>
+                    <div id="notificacionPaciente">
+                        <h2 id="confirmacionPaciente"></h2>
+                    </div>
+
+                    
 
                 </div>
 
             </div>
-
-            <div class="container text-center">
-                <div class="inicioSesion"></div>
-            </div>
+        </section>
         
 
     </main>
+
+
+
+
     <footer class="container-fluid bg-footer cl-black border-top border-dark border-3">
 
         <div class="container">
@@ -154,6 +151,6 @@
     <script src="../js/ingresar.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
     </html>
