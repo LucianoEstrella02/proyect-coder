@@ -58,7 +58,7 @@
         
         <section>
         
-            <div class="container">
+            <div class="container" id="contenedorLogin">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 d-flex align-items-center">
                         <img src="../assets/portada-nosotros.jpg" class=" w-100 rounded-5 portada mb-2" alt="analitica/cultivo">
@@ -74,7 +74,7 @@
                                 <label for="password"><i class="fa-solid fa-key icon"></i></label>
                                 <input class="input-contenedor" name="password" placeholder="contraseña" id="contrasena" type="password">
 
-                                <input id="ingresando" class="button btn btn-primary" type="submit" value="Ingresar">
+                                <input id="ingresando" class="button btn btn-primary" type="submit" value="Ingresar" onclick="ocultarElemento();">
 
                                 <p class="textoIngreso">Al iniciar sesión, aceptas Bases y condiciones de uso y Política de privacidad</p>
                             <p class="textoIngreso">¿No tienes cuenta? <a class="linkIngreso" href="./registro.html">Registrate</a></p>
@@ -88,6 +88,23 @@
 
                 </div>
 
+            </div>
+
+            <div class="container" id="contenedorAfterLogin" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nombre</th>
+                            <th> email</th>
+                            <th> phone</th>
+                            <th>address</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla"></tbody>
+                </table>
+
+                <button onclick="wolcomeBack();">LogOut</button>
             </div>
         </section>
         

@@ -1,34 +1,54 @@
+let nombreTurnos = null;
+let diaTurno= null;
+let horaTurno = null;
+let formularioTurno = document.querySelector("#formularioTurno");
+let turnoReservado = document.querySelector ("#turnoReservado");
+const btnReserv = document.querySelector("#btnTurno");
 
-let nombreTurnos = document.querySelector("#nombreTurno");
-let turnoElegido = document.querySelectorAll(".form-select");
-let reservarTurno = document.querySelector("#btn-turno");
+const validarTurno = () =>{
+    nombreTurnos = document.getElementById('nombreTurno').value;
+    diaTurno = document.getElementById('dropdownDia').selected;
+    horaTurno=document.getElementById('dropdownHora').selected;
+}
 
+window.addEventListener('load',function(){
+    formularioTurno.addEventListener('submit',(evento)=>{
+        evento.preventDefault();
+        validarTurno();
 
+        if(nombreTurnos.trim()==null || nombreTurnos.trim().length<=0){
+            Swal.fire({
+                title: "Por Favor Ingrese todos sus Datos.",
+                text: "Por Favor Ingrese su Nombre y Apellido",
+                icon: "error",
+            });
+            return false;
+        }else if(diaTurno){
+            Swal.fire({
+                title: "POR FAVOR COMPLETE TODOS LOS CAMPOS.",
+                text: "Por Favor Seleccione el Día del Turno",
+                icon: "error",
+            });
 
-reservarTurno.addEventListener("click", (e) => {
-    let servSalud = document.querySelector("#servSalud").value;
-    let dia = document.querySelector("#diaTurno").value;
-    let horario = document.querySelector("#horaTurno").value;
-    let turnoReservado = document.querySelector(".turnoReservado");
+        }else if(horaTurno){
+            Swal.fire({
+                title: "POR FAVOR COMPLETE TODOS LOS CAMPOS.",
+                text: "Por favor Seleccione el Horario del turno",
+                icon: "error",
+            });
+        }else{
+           
+ 
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'SU TURNO HA SIDO RESERVADO',
+                showConfirmButton: true,
+                timer: 2000
+              })
 
-    turnoReservado.innerHTML = `
-    <div class= "alert alert-primary text-center" role="alert">
-    <h5>${nombreTurnos.value} (${servSalud}) su turno ha sido reservado con exito. Deberá asistir el día ${dia} en el horario ${horario} horas. Muchas Gracias</h5>
-    </div>
-    `;
-
-    e.preventDefault();
-
+        };       
+    });
+    
 });
 
-
-reservarTurno.addEventListener("click", () => {
-    
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'TU TURNO HA SIDO REGISTRADO',
-            showConfirmButton: false,
-            timer: 1500
-        });
-    });

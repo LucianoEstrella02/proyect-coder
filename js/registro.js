@@ -22,7 +22,7 @@ window.addEventListener(`load`, function (){
             validarFormulario();
             if(nameRegistro.trim()== null || nameRegistro.trim().length<=0 || apellidoRegistro.trim() == null || apellidoRegistro.trim().length <= 0 || dniRegistro.trim() == null || dniRegistro.trim().length <= 0 || emailRegistro.trim() == null || emailRegistro.trim().length <= 0 || contrasenaRegistro.trim() == null || contrasenaRegistro.trim().length <= 0){
 
-                document.querySelector("#nombreForm + span").innerHTML = '<span class="fa-solid fa-xmark"></span>';
+                 document.querySelector("#nombreForm + span").innerHTML = '<span class="fa-solid fa-xmark"></span>';
                 document.querySelector("#apellidoForm + span").innerHTML = '<span class="fa-solid fa-xmark"></span>';
                 document.querySelector("#dniForm + span").innerHTML = '<span class="fa-solid fa-xmark"></span>';
                 document.querySelector("#correoForm + span").innerHTML = '<span class="fa-solid fa-xmark"></span>';

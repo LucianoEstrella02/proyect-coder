@@ -124,31 +124,30 @@
 
       
 
-<form id="formularioTurno" action="/redireccion">
+<form id="formularioTurno" >
         <div class="container">
             <div class="input-group my-3">
                 <label class="input-group-text">Nombre y Apellido</label>
-                <input type="text" nombre="nombre" aria-label="First name" class="form-control fs-6" id="nombreTurno" required>
-                
+                <input type="text" nombre="nombre" aria-label="First name" class="form-control fs-6" id="nombreTurno">
               </div>
 
-              <div class="input-group mb-3">
+              <!-- <div class="input-group mb-3">
                 <label class="input-group-text fs-6" for="inputGroupSelect01">Servicio de Salud</label>
-                <select class="container form-select fs-6" id="servSalud" required>
-                    <option selected>---</option>
+                <select class="container form-select fs-6" id="servSalud">
+                    <option id="myDropdown" selected>---</option>
                     <option value="Obra Social">Obra Social</option>
                     <option value="A.R.T">A.R.T</option>
                     <option value="Exámen Médico Laboral">Exámen Médico Laboral</option>
                     <option value="Particular">Particular</option>
                 </select>
-            </div>
+            </div> -->
               
 
               
         <div class="input-group mb-3">
             <label class="input-group-text fs-6" for="diaTurno">Día</label>
             <select class="container form-select fs-6" id="diaTurno" required>
-                <option selected>---</option>
+                <option id="dropdownDia" selected>---</option>
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
                 <option value="miercoles">Miercoles</option>
@@ -160,7 +159,7 @@
         <div class="input-group mb-3">
             <label class="input-group-text fs-6" for="horaTurno">Horario</label>
             <select class="container form-select fs-6" id="horaTurno" required>
-                <option selected>---</option>
+                <option  id="dropdownHora" selected>---</option>
                 <option value="8.00">8.00</option>
                 <option value="8.15">8.15</option>
                 <option value="8.30">8.30</option>
@@ -174,7 +173,7 @@
         </div>
 
         <div class="col-12 mb-3 d-flex justify-content-center">
-            <button type="submit" id="btn-turno" class="btn btn-primary fs-5">Reservar Turno</button>
+            <button type="submit" id="btnTurno" class="btn btn-primary fs-5">Reservar Turno</button>
           </div>
     </div>
 </form>

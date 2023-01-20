@@ -88,13 +88,7 @@
         <h2 class="fs-1 text-decoration-underline font-playDisplay mb-3 bg-titulo p-2">COMUNICATE CON NOSOTROS</h2>
     </div>
 
-    <section>
-
-
-    </section>
-
-
-    <form id="formulario" action="/redireccion">
+    <form id="formulario" class="registroform">
 
     <div class="container">
         <div class="row align-items-ba justify-content-lg-center">
@@ -102,38 +96,42 @@
 
                 <div class="mb-3 ">
                     <label for="nomApInput" class="form-label w-100 font-playDisplay">Nombre</label>
-                    <input type="text" class="form-control fs-6 " id="nombre" required>
+                    <input type="text" class="form-control fs-6 " id="nombreContacto" >
+                    <span class="spanMensajeRequerido"></span>
                 </div>
+
                 <div class="mb-3 ">
                     <label for="nomApInput" class="form-label w-100 font-playDisplay">Apellido</label>
-                    <input type="text" class="form-control fs-6 " id="apellido" required>
+                    <input type="text" class="form-control fs-6 " id="apellidoContacto" >
+                    <span class="spanMensajeRequerido"></span>
                 </div>
 
                 <div class="mb-3 ">
                     <label for="emailInput" class="form-label w-100 font-playDisplay fs-6 ">Email</label>
-                    <input id="email" class="form-control fs-6" type="email" name="email"
-                        placeholder="ejemplo123@ejemplo.com" required>
+                    <input id="emailContacto" class="form-control fs-6" type="email" name="emailContacto"
+                        placeholder="ejemplo123@ejemplo.com" >
+                        <span class="spanMensajeRequerido"></span>
                 </div>
 
                 <div class="mb-3 col-11 ">
                     <label for="telInput" class="form-label font-playDisplay fs-6">Telefono</label>
-                    <input id="telefono" type="number" class="form-control font-playDisplay" name="telIpunt" required>
+                    <input id="telefonoContacto" type="number" class="form-control font-playDisplay" name="telIpunt" >
+                    <span class="spanMensajeRequerido"></span>
                 </div>
 
                 <div class="mb-3 col-11">
                     <label for="ejDataList" class="form-label font-playDisplay fs-6">Motivo de Consulta</label>
                     <div class="form-floating">
-                        <select class="form-select font-playDisplay fs-6" id="consulta" aria-label="Floating label select example"required>
+                        <select class="form-select font-playDisplay fs-6" id="consultaContacto" aria-label="Floating label select example">
                           <option selected></option>
                           <option value="Reclamos">Reclamos/sugerencias</option>
                           <option value="Indicaciones">Indicaciones</option>
                           <option value="Turnos">Turnos</option>
                           <option value="Orden Médica">Orden Médica</option>
                           <option value="Obras Sociales">Obras Sociales</option>
-                            <option value="Otras Consultas">Otras Consultas</option>
+                          <option value="Otras Consultas">Otras Consultas</option>
                         </select>
                       </div>
-                    
                 </div>
 
                 
@@ -142,38 +140,36 @@
                 <div class=" mb-3 col-11 ">
                     <label for="fileInput" class="form-label font-playDisplay fs-6">Cargar Orden Médica</label>
                     <input id="fileOrden" type="file" value="Examinar" class="form-control font-playDisplay fs-6">
+                    <span class="spanMensajeRequerido"></span>
                 </div>
             </div>
 
 
             <div class=" col col-lg-5 d-flex m-4">
                 <label for="comentId" class="form-label font-playDisplay"></label>
-                <textarea id="comentario" class="form-control font-playDisplay" cols="30" rows="10"
-                 placeholder="Comentarios:"></textarea required>
+                <textarea id="comentarioContacto" class="form-control font-playDisplay" cols="30" rows="10"
+                 placeholder="Comentarios:"></textarea >
+                 <span class="spanMensajeRequerido"></span>
             </div>
            
 
-            <div class="d-flex justify-content-center mb-3">
-                <button class=" btn-envio btn btn-lg bg-btn font-playDisplay" type="submit">Enviar </button>
-            </div>
+        
+
+
+            
+            <input type="submit" id="btnEnvio" class='button btn btn-primary class="d-flex justify-content-center m-5">'
+            value="Enviar">
 
         </div>
 
     </div>
     </form>
 
-
-    <div class="container">
-        <div class="info"></div>
-    </div>
+ 
 
 
 
-    
-
-
-
-    <footer class="container-fluid bg-footer cl-black border-top border-dark border-3">
+    <footer class="container-fluid bg-footer cl-black border-top border-dark border-3 mt-4">
 
         <div class="container">
 
