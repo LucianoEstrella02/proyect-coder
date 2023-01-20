@@ -15,6 +15,7 @@ window.addEventListener('load',function(){
     formularioTurno.addEventListener('submit',(evento)=>{
         evento.preventDefault();
         validarTurno();
+        
 
         if(nombreTurnos.trim()==null || nombreTurnos.trim().length<=0){
             Swal.fire({
