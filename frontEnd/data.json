@@ -1,0 +1,47 @@
+[
+    {"nombre":"Dona Fredy Emiliano ","fecha": "05/01/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Dona Fredy Emiliano ","fecha": "25/09/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Estrella Luciano Valentin","fecha": "15/03/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Estrella Luciano Valentin","fecha": "20/05/2022", "analitica": "Clínica General + Orina", "medico": "Machado Martin"},
+
+    {"nombre":"Estrella Luciano Valentin","fecha": "10/07/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Fernandez Juan Martin","fecha": "02/01/2022", "analítica": "Orina + Bacteriología", "médico": "Machado Martin"},
+
+    {"nombre":"Fernandez Juan Martin","fecha": "22/06/2022", "analítica": "Clínica General +  Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Fernandez Juan Martin","fecha": "12/08/2022", "analítica": "Serología + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Fernandez Juan Martin","fecha": "02/11/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/02/2022", "analítica": "Inmunología + Bacteriología", "médico": "Machado Martin"},
+
+    {"nombre":"Jardel Ricardo Gabriel","fecha": "19/07/2022", "analítica": "Clínica General +  Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/12/2022", "analítica": "Inmunología", "médico": "Machado Martin"},
+
+    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/07/2022", "analítica": "Hematología + Clinica General", "médico": "Machado Martin"},
+
+
+    {"nombre":"Rosenblat Gabriel Gaston","fecha": "24/02/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+
+    {"nombre":"Rosenblat Gabriel Gaston","fecha": "30/03/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Rosenblat Gabriel Gaston","fecha": "24/07/2022", "analítica": "Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Rosenblat Gabriel Gaston","fecha": "14/11/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+
+    {"nombre":"Rosenblat Gabriel Gaston","fecha": "4/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+
+    {"nombre":"Zambueza Norma Catalina","fecha": "4/05/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+
+    {"nombre":"Zambueza Norma Catalina","fecha": "20/07/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+
+    {"nombre":"Zambueza Norma Catalina","fecha": "02/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+
+    {"nombre":"Zambueza Norma Catalina","fecha": "14/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"}
+]

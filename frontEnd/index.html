@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Laboratorio Bioquimico Integral - Servicio de análisis clínicos de baja y alta complejidad" />
+    <title>
+        GenBio Laboratorio - Laboratorio de análisis clínicos siempre pensando en
+        tu bienestar
+    </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Serif&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg border-bottom border-2 border-white d-flex align-items-lg-start">
+        <div class="container">
+            <a class="navbar-brand"><img src="./assets/logo.png" alt="" class="logo mb-1" />
+                <h1 class="name mt-1">GenBioLab</h1>
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active cl-black" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link cl-black" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link cl-black" href="./pages/prestacioness.html">Servicios</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link cl-black" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="nav-link cl-black" href="./pages/ingresar.html">Ingresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <img src="./assets/vacunate.png" alt="vacunate" class="vacunate w-100" />
+                </div>
+
+                <div class="col-lg-6 m-lg-3 m-3 horarios">
+                    <h1 class="text-center text-decoration-underline cl-black">
+                        NUEVO HORARIO DE ATENCIÓN
+                    </h1>
+                    <p class="text-center">Lunes a Viernes de 10am a 17 pm</p>
+                    <p class="text-center">Sábados de 8am a 13pm</p>
+                    <h2 class="text-center text-decoration-underline cl-red">
+                        HORARIOS DE EXTRACCIÓN
+                    </h2>
+                    <p class="text-center">7am a 10am</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center shadow p-3 mb-3 my-2 bg-noticia rounded font-playDisplay rounded-3">
+                <h1>
+                    ¿QUÉ DEBEMOS TENER EN CUENTA PARA REALIZARNOS UN ANÁLISIS DE SANGRE?
+                </h1>
+            </div>
+
+            <div class="container mt-2">
+                <p class="border border-5 p-3 text-center fs-3 cl-black font-verdana bg-noticia rounded-4">
+                    El análisis de sangre debe hacerse, en muchos casos, en ayunas (sin
+                    ingerir alimentos, al menos, las 8 horas anteriores). En especial
+                    cuando hay que medir valores como el colesterol, la glucosa o los
+                    triglicéridos, que se debe suspender la ingesta unas 12hs. Siempre
+                    deberemos informar de cualquier medicamento que estemos tomando, ya
+                    que algunos podrían interferir con los resultados de la analítica.
+                    Por ejemplo, los analgésicos,medicaciones tiroideas, los
+                    antiinflamatorios o los corticoides orales.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="container text-center shadow p-3 mb-5 bg-red rounded c-font border border-5 border border-dark rounded-4">
+                <h2 class="fs-1 text-decoration-underline font-playDisplay">
+                    CONTROLATE ¡MEJOR TARDE AHORA QUE NUNCA!
+                </h2>
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="imagenHiv col-lg-6">
+                            <img src="./assets/sifilis.jpg" class="w-100 rounded shadow" />
+                        </div>
+
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <img src="./assets/campana-sida.jpg" class="w-100 rounded-4 shadow" alt="campana-hiv" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class=" container-fluid text-center p-lg-0  my-3  rounded cl-black ">
+            <h2 class="fs-1 text-decoration-underline font-playDisplay mb-3 bg-titulo p-2">SOLICITUD DE TURNOS</h2>
+        </div>
+
+      
+
+<form id="formularioTurno" >
+        <div class="container">
+            <div class="input-group my-3">
+                <label class="input-group-text">Nombre y Apellido</label>
+                <input type="text" nombre="nombre" aria-label="First name" class="form-control fs-6" id="nombreTurno">
+              </div>
+
+              <!-- <div class="input-group mb-3">
+                <label class="input-group-text fs-6" for="inputGroupSelect01">Servicio de Salud</label>
+                <select class="container form-select fs-6" id="servSalud">
+                    <option id="myDropdown" selected>---</option>
+                    <option value="Obra Social">Obra Social</option>
+                    <option value="A.R.T">A.R.T</option>
+                    <option value="Exámen Médico Laboral">Exámen Médico Laboral</option>
+                    <option value="Particular">Particular</option>
+                </select>
+            </div> -->
+              
+
+              
+        <div class="input-group mb-3">
+            <label class="input-group-text fs-6" for="diaTurno">Día</label>
+            <select class="container form-select fs-6" id="diaTurno" required>
+                <option id="dropdownDia" selected>---</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text fs-6" for="horaTurno">Horario</label>
+            <select class="container form-select fs-6" id="horaTurno" required>
+                <option  id="dropdownHora" selected>---</option>
+                <option value="8.00">8.00</option>
+                <option value="8.15">8.15</option>
+                <option value="8.30">8.30</option>
+                <option value="8.45">8.45</option>
+                <option value="9.00">9.00</option>
+                <option value="9.15">9.15</option>
+                <option value="9.30">9.30</option>
+                <option value="9.45">9.45</option>
+                <option value="10.00">10.00</option>           
+            </select>
+        </div>
+
+        <div class="col-12 mb-3 d-flex justify-content-center">
+            <button type="submit" id="btnTurno" class="btn btn-primary fs-5">Reservar Turno</button>
+          </div>
+    </div>
+</form>
+
+    
+
+
+        <footer class="container-fluid bg-footer cl-black border-top border-dark border-3">
+            <div class="container">
+                <div class="row align-items-ba justify-content-between">
+                    <div class="p-3 col-lg-2">
+                        <h4 class="text-center text-decoration-underline fs-5">Links</h4>
+                        <div class="d-flex justify-content-center flex-lg-column align-items-lg-center">
+                            <a href="../index.html" class="px-2 p-lg-1">
+                                <i>Inicio</i>
+                            </a>
+                            <a href="./pages/nosotros.html" class="px-2 p-lg-1">
+                                <i>Nosotros</i>
+                            </a>
+                            <a href="./pages/prestacioness.html" class="px-2 p-lg-1">
+                                <i>Servicios</i>
+                            </a>
+                            <a href="./pages/contacto.html" class="px-2 p-lg-1">
+                                <i>Contacto</i>
+                            </a>
+                            <a href="./pages/ingresar.html" class="px-2 p-lg-1">
+                                <i>Ingresar</i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-3 col-lg-4">
+                        <h4 class="text-center p-2 p-lg-0 text-decoration-underline fs-5 mb-4">
+                            Nuestras Redes
+                        </h4>
+                        <div class="fs-3 d-flex justify-content-around mt-lg-5">
+                            <a href="https://es-la.facebook.com
+                           "><i class="fa-brands fa-facebook icons py-lg-1"></i></a>
+                            <a href="https://www.instagram.com
+                            "><i class="fa-brands fa-instagram icons py-lg-1"></i></a>
+                            <a href="https://twitter.com"><i class="fa-brands fa-twitter icons py-lg-1"></i></a>
+                            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube icons py-lg-1"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="p-3 col-lg-4">
+                        <h4 class="text-center p-2 p-lg-0 text-decoration-underline fs-5 mb-lg-3 mt-3">
+                            Escribinos
+                        </h4>
+
+                        <div class="d-flex flex-column justify-content-around text-center">
+                            <a href="https://www.gmail.com">
+                                <span class="fs-5 font-playDisplay me-5"><i
+                                        class="fa-solid fa-envelope icons fs-4 p-2"></i>genbiolab@gmailcom</span>
+                            </a>
+
+                            <a href="https://web.whatsapp.com"><span class="fs-5 font-playDisplay me-5"><i
+                                        class="fa-brands fa-whatsapp icons fs-4 p-2"></i>
+                                    0261-5003634</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/8895dec74a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
