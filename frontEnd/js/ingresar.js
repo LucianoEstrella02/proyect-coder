@@ -70,16 +70,16 @@ function ocultarElemento() {
 
       contenedorLogin.style.display = "none";
       contenedorAfterLogin.style.display = "block";
-      
+
       let url = ("http://localhost:5000/users")
-       
+
       fetch(url)
-      
+
         .then(response => response.json())
         .then(data => mostrarData(data))
         .catch(error => console.log(error));
 
-         console.log(url);
+      console.log(url);
 
       const mostrarData = (data) => {
 
@@ -88,19 +88,32 @@ function ocultarElemento() {
         for (let i = 0; i < data.length; i++) {
           body +=
             `
-            <tr>
+      <tr>
+
+          <td>
+            ${data[i].id}
+          </td>
+        
             <td>
-               ${data[i].nombre} 
+              ${data[i].nombre} 
             </td>
+
            <td>
-             ${data[i].fecha}
+            ${data[i].fecha}
            </td>
+
            <td>
-             ${data[i].analitica}
+            ${data[i].analitica}
            </td>
+
+           <td>
+           ${data[i].diagnostico}
+           </td>
+
            <td>
             ${data[i].medico}
            </td>
+
    </tr>
         `
         };
@@ -113,9 +126,9 @@ function ocultarElemento() {
 
 
 
-let btnVolver = document.getElementById ("btn-wolcomeBack");
+let btnVolver = document.getElementById("btn-wolcomeBack");
 
-btnVolver.addEventListener ('click', (e)=>{
+btnVolver.addEventListener('click', (e) => {
   var contenedorLogin = document.getElementById("contenedorLogin");
   var contenedorAfterLogin = document.getElementById("contenedorAfterLogin");
 

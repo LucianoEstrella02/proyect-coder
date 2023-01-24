@@ -41,16 +41,19 @@ window.addEventListener(`load`, function (){
                 let sweetNameContact = nombreContactoRef;
                 let sweetLastNameContact = apellidoContactoRef;
                
-    
-    
                 Swal.fire({
-                    title: "SU MENSAJE HA SIDO ENVIADO CORRECTAMENTE",
-                    text: sweetNameContact + sweetLastNameContact +" Su mensaje ha sido enviado correctamente, en breve nos comunicaremos con usted. Muchas Gracias." ,
-                    icon: "success",
-                }).then(function () {
-                    window.location.reload();
-                });
-        
+                    title: 'SU MENSAJE HA SIDO ENVIADO CORRECTAMENTE',
+                    text: sweetNameContact + " " + sweetLastNameContact +" Su mensaje ha sido enviado correctamente, en breve nos comunicaremos con usted. Muchas Gracias." ,
+                    icon : "success",
+                    showClass: {
+                      popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp'
+                    }
+                  })
+    
+              
             });
     });
     

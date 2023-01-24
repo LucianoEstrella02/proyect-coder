@@ -1,47 +1,201 @@
 [
-    {"nombre":"Dona Fredy Emiliano ","fecha": "05/01/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 1, 
+    "nombre":"Dona Fredy Emiliano ",
+    "fecha": "05/01/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Machado Martin",
+    "diagnostico" : "Control Cardiologico"
+},    
 
-    {"nombre":"Dona Fredy Emiliano ","fecha": "25/09/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 2, 
+    "nombre":"Dona Fredy Emiliano ",
+    "fecha": "25/09/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Sprazzato David",
+    "diagnostico" : "Control Clínico"
+},    
 
-    {"nombre":"Estrella Luciano Valentin","fecha": "15/03/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 3, 
+    "nombre":"Estrella Luciano Valentin",
+    "fecha": "15/03/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Sosa Paula",
+    "diagnostico" : "Control Clínico"
+},    
 
-    {"nombre":"Estrella Luciano Valentin","fecha": "20/05/2022", "analitica": "Clínica General + Orina", "medico": "Machado Martin"},
+    {
+    "id": 4, 
+    "nombre":"Estrella Luciano Valentin",
+    "fecha": "20/05/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Machado Martin",
+    "diagnostico" : "Control Cardiologico"
+},    
 
-    {"nombre":"Estrella Luciano Valentin","fecha": "10/07/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 5, 
+    "nombre":"Estrella Luciano Valentin",
+    "fecha": "10/07/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Escudero Carlos",
+    "diagnostico" : "Pre-quirurgico"
+},    
 
-    {"nombre":"Fernandez Juan Martin","fecha": "02/01/2022", "analítica": "Orina + Bacteriología", "médico": "Machado Martin"},
+    {
+    "id": 6, 
+    "nombre":"Fernandez Juan Martin",
+    "fecha": "02/01/2022", 
+    "analitica": "Orina + Bacteriología", 
+    "medico": "Ojeda Valentin",
+    "diagnostico" : "Control Cardiologico"
+},    
 
-    {"nombre":"Fernandez Juan Martin","fecha": "22/06/2022", "analítica": "Clínica General +  Orina", "médico": "Machado Martin"},
+    {
+    "id": 7, 
+    "nombre":"Fernandez Juan Martin",
+    "fecha": "22/06/2022", 
+    "analitica": "Clínica General +  Orina", 
+    "medico": "Cortez Jose",
+    "diagnostico" : "Pre-quirurgico"
+},    
 
-    {"nombre":"Fernandez Juan Martin","fecha": "12/08/2022", "analítica": "Serología + Orina", "médico": "Machado Martin"},
+    {
+    "id": 8, 
+    "nombre":"Fernandez Juan Martin",
+    "fecha": "12/08/2022", 
+    "analitica": "Serología + Orina", 
+    "medico": "Morales Maria Eugenia",
+    "diagnostico" : "Neumonía"
+},    
 
-    {"nombre":"Fernandez Juan Martin","fecha": "02/11/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 9, 
+    "nombre":"Fernandez Juan Martin",
+    "fecha": "02/11/2022", 
+    "analitica": "Clínica General + Orina", 
+    "medico": "Masters Agustina",
+    "diagnostico" : "POP"
+},    
 
-    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/02/2022", "analítica": "Inmunología + Bacteriología", "médico": "Machado Martin"},
+    {
+    "id": 10,
+     "nombre":"Jardel Ricardo Gabriel",
+     "fecha": "11/02/2022", 
+     "analitica": "Inmunología + Bacteriología", 
+     "medico": "Machado Martin",
+    "diagnostico" : "IAM"
+},
 
-    {"nombre":"Jardel Ricardo Gabriel","fecha": "19/07/2022", "analítica": "Clínica General +  Orina", "médico": "Machado Martin"},
+    {
+    "id": 11,
+     "nombre":"Jardel Ricardo Gabriel",
+     "fecha": "19/07/2022", 
+     "analitica": "Clínica General +  Orina", 
+     "medico": "Sosa Marcelo",
+    "diagnostico" : "Pre-quirurgico"
+},
 
-    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/12/2022", "analítica": "Inmunología", "médico": "Machado Martin"},
+    {
+    "id": 12,
+     "nombre":"Jardel Ricardo Gabriel",
+     "fecha": "11/12/2022", 
+     "analitica": "Inmunología",
+     "medico": "Machado Martin",
+    "diagnostico" : "Disnea"
+},
 
-    {"nombre":"Jardel Ricardo Gabriel","fecha": "11/07/2022", "analítica": "Hematología + Clinica General", "médico": "Machado Martin"},
+    {
+    "id": 13,
+     "nombre":"Jardel Ricardo Gabriel",
+     "fecha": "11/07/2022", 
+     "analitica": "Hematología + Clinica General",
+     "medico": "Machado Martin",
+    "diagnostico" : "IAM"
+},
 
 
-    {"nombre":"Rosenblat Gabriel Gaston","fecha": "24/02/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 14,
+     "nombre":"Rosenblat Gabriel Gaston",
+     "fecha": "24/02/2022", 
+     "analitica": "Clínica General + Orina",
+      "medico": "Sosa Marcelo",
+    "diagnostico" : "Pre-quirurgico"
+},
 
 
-    {"nombre":"Rosenblat Gabriel Gaston","fecha": "30/03/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 15,
+     "nombre":"Rosenblat Gabriel Gaston",
+     "fecha": "30/03/2022", 
+     "analitica": "Clínica General + Orina", 
+     "medico": "Diaz Maria Eugenia",
+    "diagnostico" : "Neumonía"
+},
 
-    {"nombre":"Rosenblat Gabriel Gaston","fecha": "24/07/2022", "analítica": "Orina", "médico": "Machado Martin"},
+    {
+    "id": 16,
+     "nombre":"Rosenblat Gabriel Gaston",
+     "fecha": "24/07/2022", 
+     "analitica": "Orina", 
+     "medico": "Diaz Maria Eugenia",
+    "diagnostico" : "Disnea"
+},
 
-    {"nombre":"Rosenblat Gabriel Gaston","fecha": "14/11/2022", "analítica": "Clínica General + Orina", "médico": "Machado Martin"},
+    {
+    "id": 17,
+     "nombre":"Rosenblat Gabriel Gaston",
+     "fecha": "14/11/2022", 
+     "analitica": "Clínica General + Orina", 
+     "medico": "Cortez Jose",
+    "diagnostico" : "Pre-quirurgico"
+},
 
-    {"nombre":"Rosenblat Gabriel Gaston","fecha": "4/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+    {
+    "id": 18,
+     "nombre":"Rosenblat Gabriel Gaston",
+     "fecha": "4/01/2023", 
+     "analitica": "Clínica General + Serología",
+     "medico": "Ottaviani Cinthia",
+     "diagnostico" : "POP"
+    },
 
-    {"nombre":"Zambueza Norma Catalina","fecha": "4/05/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+    {
+    "id": 19,
+     "nombre":"Zambueza Norma Catalina",
+     "fecha": "4/05/2023", 
+     "analitica": "Clínica General + Serología",
+      "medico": "Mesa Rodrigo",
+     "diagnostico" : "Control Clínico"
+    },
 
-    {"nombre":"Zambueza Norma Catalina","fecha": "20/07/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+    {
+    "id": 20,
+     "nombre":"Zambueza Norma Catalina",
+     "fecha": "20/07/2023", 
+     "analitica": "Clínica General + Serología", 
+     "medico": "Escudero Carlos",
+     "diagnostico" : "Pre-quirurgico"
+    },
 
-    {"nombre":"Zambueza Norma Catalina","fecha": "02/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"},
+    {
+    "id": 21,
+     "nombre":"Zambueza Norma Catalina",
+     "fecha": "02/01/2023", 
+     "analitica": "Clínica General + Serología", 
+     "medico": "Escudero Carlos",
+     "diagnostico" : "Control Clínico"
+    },
 
-    {"nombre":"Zambueza Norma Catalina","fecha": "14/01/2023", "analítica": "Clínica General + Seroloía", "médico": "Machado Martin"}
+    {
+    "id": 22,
+     "nombre":"Zambueza Norma Catalina",
+     "fecha": "14/01/2023", 
+     "analitica": "Clínica General + Serología",
+     "medico": "Mesa Rodrigo",
+     "diagnostico" : "Control Cardiologico"
+    }
 ]

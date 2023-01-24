@@ -1,6 +1,6 @@
 let nombreTurnos = null;
-let diaTurno;
-let horaTurno;
+let diaTurno = null;
+let horaTurno= null;
 let formularioTurno = document.querySelector("#formularioTurno");
 let turnoReservado = document.querySelector ("#turnoReservado");
 const btnReserv = document.querySelector("#btnTurno");
@@ -37,12 +37,12 @@ window.addEventListener('load',function(){
                 text: "Por favor Seleccione el Horario del turno",
                 icon: "error",
             });
-        }else{
+        }else{      
            
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: nombreTurnos +'SU TURNO HA SIDO RESERVADO',
+                title: nombreTurnos +' SU TURNO HA SIDO RESERVADO ÉXITO', 
                 showConfirmButton: true,
                 timer: 4000
               }).then(function () {
