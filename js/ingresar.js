@@ -71,7 +71,7 @@ function ocultarElemento() {
       contenedorLogin.style.display = "none";
       contenedorAfterLogin.style.display = "block";
 
-      let url = ("http://192.168.100.2:5000/users")
+      let url = ("http://localhost:5000/users")
 
       fetch(url)
 
