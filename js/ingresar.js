@@ -50,7 +50,7 @@ btnIngreso.addEventListener('click', (e) => {
     }
   });
 
-  mensajePaciente.innerHTML = '<div class= "alert alert-warning text-center fs-4" role="alert">¡Bienvenido a Genbio Laboratorio ' + saludoUser + '!</div> ';
+  mensajePaciente.innerHTML = '<div class= "alert alert-warning text-center fs-4" role="alert">¡Gracias por haber ingresado a Genbio Laboratorio ' + saludoUser + ' te esperamos nuevamente!</div> ';
 });
 
 

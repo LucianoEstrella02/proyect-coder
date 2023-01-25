@@ -37,8 +37,8 @@ window.addEventListener('load',function(){
                 text: "Por favor Seleccione el Horario del turno",
                 icon: "error",
             });
-        }else{      
-           
+        }else {     
+
             Swal.fire({
                 position: 'center',
                 icon: 'success',
